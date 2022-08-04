@@ -148,6 +148,7 @@
 	align-items: center;
 	font-weight: 700;
 }
+
 .pagination .btn.active {
 	background-color: #7963f0;
 	color: var(--color-white);

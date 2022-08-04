@@ -11,16 +11,136 @@
 
 	const btns = [toggleSidebarBtn, overlay, btnClose];
 	btns.forEach((e) => {
-		e.addEventListener('click', () => {
-			console.log('toggle');
-			const body = document.querySelector('body');
-			body.classList.toggle('toggle-sidebar');
-		});
+		if (e) {
+			e.addEventListener('click', () => {
+				console.log('toggle');
+				const body = document.querySelector('body');
+				body.classList.toggle('toggle-sidebar');
+			});
+		} else {
+			null;
+		}
 	});
 
 	/**
 	 * end toggle sidebar
 	 */
+
+	// index2 car details data
+
+	const cardata = [
+		{
+			img: 'assets/img/car2.png',
+			title: '2013 Subaru Forester Premium Plus',
+			subTitle: 'Subaru Champlin, Othoberg, HI 78276',
+			speedText: '135 Miles away',
+			price: '$21,480',
+			carIcon: 'assets/img/icon1.png',
+		},
+		{
+			img: 'assets/car-image/car2.png',
+			title: 'Used 2010 BMW X3 Sport package',
+			subTitle: 'BMW Dealer Liana Extensions NY 01688-8754',
+			speedText: '135 Miles away',
+			price: '$36,800',
+			carIcon: 'assets/img/icon2.png',
+		},
+		{
+			img: 'assets/car-image/car3.png',
+			title: '2016 Toyota BRZ',
+			subTitle: 'Toyota Turnpike, Ilenemouth, AR 52043',
+			speedText: '190 Miles away',
+			price: '$29,500',
+			carIcon: 'assets/img/icon3.png',
+		},
+		{
+			img: 'assets/car-image/car4.png',
+			title: 'Used 2015 Audi S3 Premium Plus',
+			subTitle: 'Audi Brookeview, AR 07730-3728',
+			speedText: '230 Miles away',
+			price: '$21,400',
+			carIcon: 'assets/img/icon4.png',
+		},
+		{
+			img: 'assets/car-image/car5.png',
+			title: '2019 Fiat 500',
+			subTitle: 'Fiat Dealer, Kayleighbury, NJ 50617-6060',
+			speedText: '135 Miles away',
+			price: '$21,480',
+			carIcon: 'assets/img/icon5.png',
+		},
+	];
+	const carDetailsList = document.querySelector('.car-details-list');
+
+	const markup = `
+					${cardata
+						.map((item) => {
+							const { img, title, subTitle, speedText, price, carIcon } = item;
+							return `
+						<div class="mb-5">
+						<div class="CarList">
+							<div
+								class="car-container d-flex justify-content-start align-items-stretch gap-3 w-100"
+							>
+								<div class="carImage">
+									<img src=${img} alt=${title} />
+								</div>
+
+								<div class="carDetails w-100">
+									<h3 class="CarHeading">${title}</h3>
+									<div class="car-info align-items-center gap-1">
+										<span style="color: #9a9ea7">11 475 Miles</span>
+										<div class="dot"></div>
+										<li>White</li>
+										<div class="dot"></div>
+										<li>AWD</li>
+										<div class="dot"></div>
+										<li>4-Cylinder Turbo</li>
+									</div>
+									<div class="d-flex mt-3 info-container">
+										<div class="carIcon me-3">
+											<img src=${carIcon} class="img-fluid" alt="" />
+										</div>
+										<div>
+											<h5 class="CarSmallHeading">${subTitle}</h5>
+											<span style="color: #9a9ea7">${speedText}</span>
+										</div>
+									</div>
+									<div class="d-flex mt-3 d-flex justify-content-between align-items-center">
+										<div class="price-control">
+											<h3 class="CarMoney">${price}</h3>
+										</div>
+										<a href="#" class="conform">Confirm availability</a>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						`;
+						})
+						.join('')}
+					
+	`;
+
+	if (carDetailsList) {
+		carDetailsList.innerHTML = '';
+		carDetailsList.insertAdjacentHTML('afterbegin', markup);
+	}
+
+	// index2 car details data end
+
+	const sidebar = document.querySelector('.sidebar');
+	const body = document.querySelector('body');
+	// let bodyHeight = 0;
+	const events = ['load', 'resize'];
+	for (let i = 0; i < events.length; i++) {
+		window.addEventListener(events[i], () => {
+			sidebar.style.minHeight = `${body.offsetHeight - 20}px`;
+		});
+	}
+
+	// sidebar height end
 
 	const select = (el, all = false) => {
 		el = el.trim();
@@ -349,4 +469,3 @@
 		}, 200);
 	}
 })();
-

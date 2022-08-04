@@ -139,6 +139,17 @@ a:hover {
 	width: 100%;
 }
 
+hr {
+	border: 1px solid #ede8e9;
+}
+
+.dot {
+	height: 5px;
+	width: 5px;
+	background-color: var(--color-gray);
+	border-radius: 50%;
+}
+
 /* ========================== */
 /* background color */
 /* ========================== */

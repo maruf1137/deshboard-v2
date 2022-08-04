@@ -12,17 +12,16 @@
 		padding: 1.6rem 1.4rem;
 	}
 
-	/* login page */
 	.SignUpHead {
 		font-family: 'Inter';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 5rem;
-		line-height: 6rem;
-		margin-top: 4.2rem;
+		font-size: 6rem;
+		/* line-height: 6rem; */
+		/* margin-top: 4rem; */
 		color: #ffffff;
-		text-align: justify;
-		margin-left: 4.2rem;
+		/* text-align: justify; */
+		/* margin-left: 4rem; */
 	}
 }
 
@@ -46,6 +45,10 @@
 		grid-column: 1/-1;
 	}
 
+	.notification-page #main {
+		margin-bottom: 0;
+	}
+
 	.sidebar {
 		position: fixed !important;
 		top: 0;
@@ -53,8 +56,13 @@
 		bottom: 0;
 		max-width: 100vw !important;
 		width: 50%;
-		height: 100vh;
+		height: 100%;
+		min-height: calc(100vh - 20px) !important;
 		transform: translate(-100%);
+	}
+
+	.sell-car-box {
+		bottom: 2rem;
 	}
 
 	.mblNav {
@@ -82,10 +90,10 @@
 	/* sign in page */
 	.login-page {
 		padding: 0;
-		overflow: hidden;
+		/* overflow: hidden; */
 	}
 
-	.signin-img {
+	.signin-image-area {
 		border-radius: 0;
 	}
 
@@ -93,8 +101,12 @@
 		position: relative;
 		z-index: 5;
 		width: 100%;
-		margin-top: -74rem;
+		margin-top: -40rem;
 		border-radius: 16px 16px 0px 0px;
+	}
+
+	.signin-img {
+		border-radius: 0;
 	}
 
 	.signin-btns .btn {
@@ -178,7 +190,9 @@
 		height: 2.2rem;
 	}
 
-	.signin-content-area {
-		margin-top: -85rem;
+	.CarList2 {
+		flex-direction: column;
 	}
+
+	/* search page */
 }

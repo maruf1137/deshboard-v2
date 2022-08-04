@@ -10,7 +10,7 @@
 
 .login-page {
 	padding: 3rem;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 }
 
@@ -20,7 +20,7 @@
 	margin: 0;
 }
 .signin-image-area {
-	height: 100%;
+	min-height: 100vh;
 	/* overflow: hidden; */
 	border-radius: 2rem;
 }
@@ -245,11 +245,13 @@
 	font-style: normal;
 	font-weight: 700;
 	font-size: 6rem;
+	padding: 5rem 0 0 2rem;
+	text-align: left;
 	line-height: 7rem;
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 	color: #ffffff;
-	text-align: justify;
-	margin-left: 5rem;
+	/* text-align: justify; */
+	/* margin-left: 5rem; */
 }
 
 /* signup fixing start  */

@@ -22,16 +22,18 @@
 		<!-- Vendor CSS Files -->
 		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
 		<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
 		<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
 		<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-		<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+		<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" /> -->
+		<link rel="stylesheet" href="assets/css/utilities.css" />
 		<link href="assets/css/search2.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/calendar.css" />
 		<link rel="stylesheet" href="assets/css/responsive.css" />
 	</head>
 
-	<body class="dashboard-page">
+	<body class="search2-page dashboard-page">
 		<!-- ======= sidebar ======= -->
 		<aside id="sidebar" class="sidebar position-absolute">
 			<button class="btn-close-sidebar">
@@ -126,7 +128,7 @@
 				<!-- End Register Page Nav -->
 			</ul>
 
-			<div class="sell-car-box searchSidebar">
+			<div class="sell-car-box d-none">
 				<p class="text">A new way to buy modern and sell old cars</p>
 				<a href="#" class="btn btn-sell-car d-flex">
 					<svg class="icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
@@ -155,49 +157,101 @@
 
 			<!-- search  -->
 
-			<section class="header-search">
-				<div class="d-flex searching justify-contetnt-between">
-					<div class="col-md-7 search-control d-flex">
-						<img src="assets/img/FSearch.png" alt="" />
-						<input type="text" placeholder="Infiniti" class="input w-100 px-3" />
+			<section class="header-search d-none d-md-block">
+				<div class="flex-between searching justify-contetnt-between">
+					<div class="search-control">
+						<img src="assets/img/6.png" alt="" />
+						<input type="text" class="p-2 inp-box" name="" id="" />
 					</div>
-					<div class="col-md-5 suggetions">
+					<div class="suggetions">
 						<a href="#" class="search-suggetion">New</a>
-						<a href="#" class="search-suggetion used">Used</a>
+						<a href="#" class="search-suggetion">Used</a>
 						<a href="#" class="search-suggetion">Auction</a>
 						<a href="#" class="search-suggetion suggetions-hide">Certified used</a>
 					</div>
 				</div>
 			</section>
 
+			<div class="auction2-header mb-3 d-md-none py-3 radius-8">
+				<form action="#" class="form w-100 py-4 px-3 d-flex mb-4">
+					<input type="text" placeholder="Infiniti" class="input w-100 px-3" />
+					<button class="btn btn-form bg-pink-100 flex-center p-0 radius-50">
+						<!-- <svg class="icon icon-search">
+								<use xlink:href="assets/img/icons.svg#icon-clear"></use>
+							</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							class="icon"
+						>
+							<path
+								d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"
+							></path>
+						</svg>
+					</button>
+				</form>
+
+				<hr class="" />
+
+				<div class="filter-btns d-flex align-items-center px-4 gap-1">
+					<!-- <button class="btn btn-filter bg-gray-100">price</button>
+					<button class="btn btn-filter bg-gray-100 active">model</button>
+					<button class="btn btn-filter bg-gray-100">all filter</button> -->
+					<a href="#" class="search-suggetion btn">New</a>
+					<a href="#" class="search-suggetion btn">Used</a>
+					<a href="#" class="search-suggetion btn">Auction</a>
+					<a href="#" class="search-suggetion suggetions-hide btn">Certified used</a>
+				</div>
+			</div>
+
 			<section class="row mt-5">
 				<div class="col-md-8 flex-sm-column">
 					<!-- car list  1-->
 					<div class="mb-5">
-						<div class="CarList2 row">
-							<div class="carImage2 col-md-4">
+						<div class="CarList2 d-flex justify-content-start align-items-center gap-2">
+							<div class="carImage2">
 								<img src="assets/car-image/car2.png" class="img-fluid" alt="" />
 							</div>
-							<div class="carDetails col-md-8">
-								<div class="d-flex mt-3">
+							<div class="carDetails w-100">
+								<div class="d-flex justify-content-between mt-3">
 									<div>
-										<h5 class="Audit">Used 2015 Audi S4 Premium Plus</h5>
-										<p class="Miles">11 475 Miles</p>
+										<h3>Used 2015 Audi S4 Premium Plus</h3>
+										<p style="color: #9a9ea7">11 475 Miles</p>
 									</div>
 
 									<div class="ms-auto">
-										<button type="button" class="btn btn-light dot-btn">...</button>
+										<!-- <button type="button" class="btn btn-light dot-btn">...</button> -->
+										<button class="btn btn-light dot-btn">
+											<svg
+												version="1.1"
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+												class="icon"
+											>
+												<path
+													d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+												></path>
+											</svg>
+										</button>
 									</div>
 								</div>
-								<div class="car-info2">
-									<p style="color: #9a9ea7">Blue</p>
+								<div class="d-flex gap-1 align-items-center" style="color: #9a9ea7">
+									<p class="m-0">Blue</p>
+									<div class="dot"></div>
 									<li>23 city/17 Highway</li>
+									<div class="dot"></div>
 									<li>AWD</li>
+									<div class="dot"></div>
 									<li>4-Cylinder Turbo</li>
 								</div>
 								<div class="d-flex mt-3">
 									<div class="col-md-6">
-										<h3 class="Audit">$41,400</h3>
+										<h3>$41,400</h3>
 									</div>
 								</div>
 							</div>
@@ -206,30 +260,52 @@
 					<hr class="hr-control" />
 					<!-- car list  2-->
 					<div class="mb-5">
-						<div class="CarList2 row">
-							<div class="carImage2 col-md-4">
+						<div class="CarList2 d-flex justify-content-start align-items-center gap-2">
+							<div class="carImage2">
 								<img src="assets/car-image/car.png" class="img-fluid" alt="" />
 							</div>
-							<div class="carDetails col-md-8">
-								<div class="d-flex mt-3">
+							<div class="carDetails w-100">
+								<div class="d-flex justify-content-between mt-3">
 									<div>
-										<h3 class="Audit">2013 Suburu Forester Premium Plus</h3>
+										<h3>2013 Suburu Forester Premium Plus</h3>
 										<p style="color: #9a9ea7">40 475 Miles away</p>
 									</div>
 
 									<div class="ms-auto">
-										<button type="button" class="btn btn-light dot-btn">...</button>
+										<button class="btn btn-light dot-btn">
+											<svg
+												version="1.1"
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+												class="icon"
+											>
+												<path
+													d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+												></path>
+											</svg>
+										</button>
 									</div>
 								</div>
-								<div id="car-info" class="car-info2">
+								<!-- <div id="car-info" class="car-info2">
 									<p style="color: #9a9ea7">White</p>
 									<li>13 city/7 Highway</li>
 									<li>AWD</li>
 									<li>4-Cylinder Turbo</li>
+								</div> -->
+								<div class="d-flex gap-1 align-items-center" style="color: #9a9ea7">
+									<p class="m-0">Blue</p>
+									<div class="dot"></div>
+									<li>13 city/7 Highway</li>
+									<div class="dot"></div>
+									<li>AWD</li>
+									<div class="dot"></div>
+									<li>4-Cylinder Turbo</li>
 								</div>
 								<div class="d-flex mt-3">
 									<div class="col-md-6">
-										<h3 class="Audit">$21,480</h3>
+										<h3>$21,480</h3>
 									</div>
 								</div>
 							</div>
@@ -238,30 +314,54 @@
 					<hr class="hr-control" />
 					<!-- car list  3-->
 					<div class="mb-5">
-						<div class="CarList2 row">
-							<div class="carImage2 col-md-4">
+						<div class="CarList2 d-flex justify-content-start align-items-center gap-2">
+							<div class="carImage2">
 								<img src="assets/car-image/car6.png" class="img-fluid" alt="" />
 							</div>
-							<div class="carDetails col-md-8">
-								<div class="d-flex mt-3">
+							<div class="carDetails w-100">
+								<div class="d-flex justify-content-between mt-3">
 									<div>
-										<h3 class="Audit">Used 2010 BMW X3 Sport Package</h3>
+										<h3>Used 2010 BMW X3 Sport Package</h3>
 										<p style="color: #9a9ea7">20 850 Miles</p>
 									</div>
 
 									<div class="ms-auto">
-										<button type="button" class="btn btn-light dot-btn">...</button>
+										<button class="btn btn-light dot-btn">
+											<svg
+												version="1.1"
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+												class="icon"
+											>
+												<path
+													d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+												></path>
+											</svg>
+										</button>
 									</div>
 								</div>
-								<div class="car-info2">
+								<!-- <div class="car-info2">
 									<p style="color: #9a9ea7">Black</p>
 									<li>23 city/17 Highway</li>
 									<li>RWD</li>
 									<li>4-Cylinder</li>
+								</div> -->
+
+								<div class="d-flex gap-1 align-items-center" style="color: #9a9ea7">
+									<p class="m-0">Blue</p>
+									<div class="dot"></div>
+									<li>23 city/7 Highway</li>
+									<div class="dot"></div>
+									<li>AWD</li>
+									<div class="dot"></div>
+									<li>4-Cylinder Turbo</li>
 								</div>
+
 								<div class="d-flex mt-3">
 									<div class="col-md-6">
-										<h3 class="Audit">$36,800</h3>
+										<h3>$36,800</h3>
 									</div>
 								</div>
 							</div>
@@ -270,30 +370,54 @@
 					<hr class="hr-control" />
 					<!-- car list  4-->
 					<div class="mb-5">
-						<div class="CarList2 row">
-							<div class="carImage2 col-md-4">
+						<div class="CarList2 d-flex justify-content-start align-items-center gap-2">
+							<div class="carImage2">
 								<img src="assets/car-image/car3.png" class="img-fluid" alt="" />
 							</div>
-							<div class="carDetails col-md-8">
-								<div class="d-flex mt-3">
+							<div class="carDetails w-100">
+								<div class="d-flex justify-content-between mt-3">
 									<div>
-										<h3 class="Audit">2016 Toyta BRZ</h3>
+										<h3>2016 Toyta BRZ</h3>
 										<p style="color: #9a9ea7">61 475 Miles</p>
 									</div>
 
 									<div class="ms-auto">
-										<button type="button" class="btn btn-light dot-btn btn2">...</button>
+										<button class="btn btn-light dot-btn">
+											<svg
+												version="1.1"
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+												class="icon"
+											>
+												<path
+													d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+												></path>
+											</svg>
+										</button>
 									</div>
 								</div>
-								<div class="car-info2">
+								<!-- <div class="car-info2">
 									<p style="color: #9a9ea7">White</p>
 									<li>23 city/17 Highway</li>
 									<li>AWD</li>
 									<li>4-Cylinder Turbo</li>
+								</div> -->
+
+								<div class="d-flex gap-1 align-items-center" style="color: #9a9ea7">
+									<p class="m-0">Blue</p>
+									<div class="dot"></div>
+									<li>23 city/7 Highway</li>
+									<div class="dot"></div>
+									<li>AWD</li>
+									<div class="dot"></div>
+									<li>4-Cylinder Turbo</li>
 								</div>
+
 								<div class="d-flex mt-3">
 									<div class="col-md-6">
-										<h3 class="Audit">$21,480</h3>
+										<h3>$21,480</h3>
 									</div>
 								</div>
 							</div>
@@ -302,30 +426,46 @@
 					<hr class="hr-control" />
 					<!-- car list  5-->
 					<div class="mb-5">
-						<div class="CarList2 row">
-							<div class="carImage2 col-md-4">
+						<div class="CarList2 d-flex justify-content-start align-items-center gap-2">
+							<div class="carImage2">
 								<img src="assets/car-image/car4.png" class="img-fluid" alt="" />
 							</div>
-							<div class="carDetails col-md-8">
-								<div class="d-flex mt-3">
+							<div class="carDetails w-100">
+								<div class="d-flex justify-content-between mt-3">
 									<div>
-										<h3 class="Audit">Used 2015 Audi S3 Premium Plus</h3>
+										<h3>Used 2015 Audi S3 Premium Plus</h3>
 										<p style="color: #9a9ea7">11 475 Miles</p>
 									</div>
 
 									<div class="ms-auto">
-										<button type="button" class="btn btn-light dot-btn">...</button>
+										<button class="btn btn-light dot-btn">
+											<svg
+												version="1.1"
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+												class="icon"
+											>
+												<path
+													d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+												></path>
+											</svg>
+										</button>
 									</div>
 								</div>
-								<div class="car-info2">
-									<p style="color: #9a9ea7">Black</p>
-									<li>15 city/8 Highway</li>
-									<li>FWD</li>
+								<div class="d-flex gap-1 align-items-center" style="color: #9a9ea7">
+									<p class="m-0">Blue</p>
+									<div class="dot"></div>
+									<li>23 city/7 Highway</li>
+									<div class="dot"></div>
+									<li>AWD</li>
+									<div class="dot"></div>
 									<li>4-Cylinder Turbo</li>
 								</div>
 								<div class="d-flex mt-3">
 									<div class="col-md-6">
-										<h3 class="Audit">$21,400</h3>
+										<h3>$21,400</h3>
 									</div>
 								</div>
 							</div>
@@ -334,30 +474,46 @@
 					<hr class="hr-control" />
 					<!-- car list  6-->
 					<div class="mb-5">
-						<div class="CarList2 row">
-							<div class="carImage2 col-md-4">
+						<div class="CarList2 d-flex justify-content-start align-items-center gap-2">
+							<div class="carImage2">
 								<img src="assets/car-image/car5.png" class="img-fluid" alt="" />
 							</div>
-							<div class="carDetails col-md-8">
-								<div class="d-flex mt-3">
+							<div class="carDetails w-100">
+								<div class="d-flex justify-content-between mt-3">
 									<div>
-										<h3 class="Audit">2019 Fiat 500</h3>
+										<h3>2019 Fiat 500</h3>
 										<p style="color: #9a9ea7">145 500 Miles</p>
 									</div>
 
 									<div class="ms-auto">
-										<button type="button" class="btn btn-light dot-btn btn2">...</button>
+										<button class="btn btn-light dot-btn">
+											<svg
+												version="1.1"
+												xmlns="http://www.w3.org/2000/svg"
+												width="20"
+												height="20"
+												viewBox="0 0 20 20"
+												class="icon"
+											>
+												<path
+													d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+												></path>
+											</svg>
+										</button>
 									</div>
 								</div>
-								<div class="car-info2">
-									<p style="color: #9a9ea7">White</p>
-									<li>15 city/8 Highway</li>
-									<li>FWD</li>
-									<li>4-Cylinder</li>
+								<div class="d-flex gap-1 align-items-center" style="color: #9a9ea7">
+									<p class="m-0">Blue</p>
+									<div class="dot"></div>
+									<li>23 city/7 Highway</li>
+									<div class="dot"></div>
+									<li>AWD</li>
+									<div class="dot"></div>
+									<li>4-Cylinder Turbo</li>
 								</div>
 								<div class="d-flex mt-3">
 									<div class="col-md-6">
-										<h3 class="Audit">$22,500</h3>
+										<h3>$22,500</h3>
 									</div>
 								</div>
 							</div>
@@ -371,10 +527,10 @@
 							<img src="assets/img/filter.png" alt="" />
 						</div>
 						<div>
-							<h3 class="filterby">Filter by</h3>
+							<h3 style="color: #9a9ea7">Filter by</h3>
 						</div>
 					</div>
-
+					<!-- accordian start  -->
 					<div class="accordion accordion-flush" id="accordionFlushExample">
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="flush-headingOne">
@@ -386,7 +542,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseOne"
 								>
-									<h3 class="filterBy">Year</h3>
+									<h3>Year</h3>
 								</button>
 							</h2>
 							<div
@@ -411,7 +567,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseTwo"
 								>
-									<h3 class="filterBy">Model</h3>
+									<h3>Model</h3>
 								</button>
 							</h2>
 							<div
@@ -437,7 +593,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseThree"
 								>
-									<h3 class="filterBy">Make</h3>
+									<h3>Make</h3>
 								</button>
 							</h2>
 							<div
@@ -465,7 +621,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseFour"
 								>
-									<h3 class="filterBy">Transmission</h3>
+									<h3>Transmission</h3>
 								</button>
 							</h2>
 							<div
@@ -493,7 +649,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseFive"
 								>
-									<h3 class="filterBy">Body style</h3>
+									<h3>Body style</h3>
 								</button>
 							</h2>
 							<div
@@ -521,7 +677,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseSix"
 								>
-									<h3 class="filterBy">Engine</h3>
+									<h3>Engine</h3>
 								</button>
 							</h2>
 							<div
@@ -538,10 +694,9 @@
 												type="checkbox"
 												value=""
 												id="flexCheckDefault"
-												checked
 											/>
 											<label class="form-check-label" for="flexCheckDefault">
-												<h3 class="LabelMaking">3.5 V-6 cyl</h3>
+												<h3>3.5 V-6 cyl</h3>
 											</label>
 										</div>
 										<div class="form-check">
@@ -552,7 +707,7 @@
 												id="flexCheckDefault"
 											/>
 											<label class="form-check-label" for="flexCheckDefault">
-												<h3 class="LabelMaking1">3.7 V-6 cyl</h3>
+												<h3 style="color: #9a9ea7">3.7 V-6 cyl</h3>
 											</label>
 										</div>
 										<div class="form-check">
@@ -561,9 +716,10 @@
 												type="checkbox"
 												value=""
 												id="flexCheckChecked"
+												checked
 											/>
 											<label class="form-check-label" for="flexCheckChecked">
-												<h3 class="LabelMaking1">4.5 V-6 cyl</h3>
+												<h3 style="color: #9a9ea7">4.5 V-6 cyl</h3>
 											</label>
 										</div>
 									</div>
@@ -580,7 +736,7 @@
 									aria-expanded="true"
 									aria-controls="flush-collapseSeven"
 								>
-									<h3 class="filterBy">Drive train</h3>
+									<h3>Drive train</h3>
 								</button>
 							</h2>
 							<div
@@ -599,10 +755,9 @@
 														type="checkbox"
 														value=""
 														id="flexCheckChecked"
-														checked
 													/>
 													<label class="form-check-label" for="flexCheckChecked">
-														<h3 class="LabelMaking">4 WD</h3>
+														<h3>4 WD</h3>
 													</label>
 												</div>
 												<div class="form-check">
@@ -611,9 +766,10 @@
 														type="checkbox"
 														value=""
 														id="flexCheckDefault"
+														checked
 													/>
 													<label class="form-check-label" for="flexCheckDefault">
-														<h3 class="LabelMaking1">RWD</h3>
+														<h3 style="color: #9a9ea7">RWD</h3>
 													</label>
 												</div>
 											</div>
@@ -632,7 +788,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseEight"
 								>
-									<h3 class="filterBy">Interior</h3>
+									<h3>Interior</h3>
 								</button>
 							</h2>
 							<div
@@ -660,7 +816,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseNine"
 								>
-									<h3 class="filterBy">Color</h3>
+									<h3>Color</h3>
 								</button>
 							</h2>
 							<div
@@ -688,24 +844,21 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseTen"
 								>
-									<h3 class="filterBy">Price</h3>
+									<h3>Price</h3>
 								</button>
 							</h2>
 							<div
 								id="flush-collapseTen"
-								class="accordion-collapse collapse show"
+								class="accordion-collapse collapse"
 								aria-labelledby="flush-headingTen"
 								data-bs-parent="#accordionFlushExample"
 							>
 								<div class="accordion-body">
-									<div class="PriceMoney">
-										<p>
-											<span class="StartPrice">$15.700</span> <span class="EndPrice">$38.990</span>
-										</p>
-									</div>
-									<div class="PriceImg">
-										<img src="assets/img/price2.PNG" alt="" />
-									</div>
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the third item's accordion body.
+									Nothing more exciting happening here in terms of content, but just filling up the
+									space to make it look, at least at first glance, a bit more representative of how
+									this would look in a real-world application.
 								</div>
 							</div>
 						</div>
@@ -719,7 +872,7 @@
 									aria-expanded="false"
 									aria-controls="flush-collapseEleven"
 								>
-									<h3 class="filterBy">Features</h3>
+									<h3>Features</h3>
 								</button>
 							</h2>
 							<div
@@ -740,13 +893,12 @@
 					</div>
 				</div>
 			</section>
-
-			<!-- pagination start -->
+			<!-- pagination -->
 			<div class="pagination d-flex align-items-center justify-content-start">
 				<button class="btn btn-prev-pagination d-none p-0 flex-between gap-1">
 					<!-- <svg class="icon icon-arrow-left">
-          <use xlink:href="assets/img/icons.svg#icon-arrow-left"></use>
-        </svg> -->
+							<use xlink:href="assets/img/icons.svg#icon-arrow-left"></use>
+						</svg> -->
 					<svg
 						version="1.1"
 						xmlns="http://www.w3.org/2000/svg"
@@ -769,8 +921,22 @@
 					<button class="btn btn-pagination">5</button>
 				</div>
 				<button class="btn btn-next-pagination flex-between gap-1">
-					<span class="me-2">next</span>
-					<img src="assets/img/next.png" alt="" />
+					<span class="nextText">next</span>
+					<!-- <svg class="icon icon-arrow-left">
+							<use xlink:href="assets/img/icons.svg#icon-arrow-right"></use>
+						</svg> -->
+					<svg
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						class="icon"
+					>
+						<path
+							d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"
+						></path>
+					</svg>
 				</button>
 			</div>
 

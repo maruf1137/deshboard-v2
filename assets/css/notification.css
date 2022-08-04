@@ -13,7 +13,6 @@
 	--color-secondary: #717ff5;
 }
 
-
 html {
 	font-size: 62.5%;
 }
@@ -43,14 +42,14 @@ a:hover {
 }
 
 .dashBoard {
-  margin-left: 15px;
-  color: #9a9ea7;
+	margin-left: 15px;
+	color: #9a9ea7;
 }
 #main {
 	transition: all 0.3s;
 	padding: 20px 30px;
 	grid-column: 2/-1;
-	border-left: 1px solid #EEEEEE;
+	border-left: 1px solid #eeeeee;
 }
 
 /* footer {
@@ -625,7 +624,6 @@ a:hover {
 	background-color: #f6f9ff;
 }
 
-
 .sidebar {
 	max-width: 25rem;
 	width: 100%;
@@ -830,19 +828,19 @@ a:hover {
 # notification slider button
 --------------------------------------------------------------*/
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 22px;
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 22px;
 }
-  
-  .switch input { 
+
+.switch input {
 	opacity: 0;
 	width: 0;
 	height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
 	position: absolute;
 	cursor: pointer;
 	top: 0;
@@ -850,52 +848,52 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	background-color: #ccc;
-	-webkit-transition: .4s;
-	transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 2px;
-    bottom: 1px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
-  input:checked + .slider {
+
+.slider:before {
+	position: absolute;
+	content: '';
+	height: 20px;
+	width: 20px;
+	left: 2px;
+	bottom: 1px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+input:checked + .slider {
 	background-color: rgba(38, 38, 238, 0.637);
-  }
-  
-  input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
 	-webkit-transform: translateX(26px);
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
 	border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
 	border-radius: 50%;
-  }
-  .profile-notification {
+}
+.profile-notification {
 	background: #ffffff;
 	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
 	border-radius: 6px;
-    padding: 10px 15px;
-	border: 1px solid #EEEEEE;
+	padding: 10px 15px;
+	border: 1px solid #eeeeee;
 	margin-right: 22px;
 }
-.profile-notification img{
+.profile-notification img {
 	border-radius: 10px;
 	width: 20%;
 	margin-bottom: 20px;
@@ -903,15 +901,13 @@ a:hover {
 	margin-left: 10px;
 }
 
-.carIcon img{
+.carIcon img {
 	height: 44px;
 	width: 44px;
 	left: 8px;
 	top: 10px;
-	border: 1px solid #E4E6E8;
-    border-radius: 8px;
-	
-
+	border: 1px solid #e4e6e8;
+	border-radius: 8px;
 }
 
 /*--------------------------------------------------------------
@@ -1084,7 +1080,6 @@ a:hover {
 	margin-left: 95px;
 }
 
-
 .dashBoardImages {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1125,7 +1120,6 @@ a:hover {
 	padding: 7px 15px;
 }
 
-
 .Privacy {
 	font-family: 'Inter';
 	font-style: normal;
@@ -1164,7 +1158,6 @@ a:hover {
 	margin-top: 10px;
 }
 
-
 .sell-car-box {
 	padding: 2rem 2.8rem;
 	background: #f5f6f7;
@@ -1173,12 +1166,10 @@ a:hover {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	margin-left:2rem ;
+	margin-left: 2rem;
 	margin-right: 2rem;
 	text-align: center;
 }
-
-
 
 /* sidebar footer area sell  start*/
 .sell-car-box {
@@ -1189,7 +1180,7 @@ a:hover {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	margin-left:2rem ;
+	margin-left: 2rem;
 	margin-right: 2rem;
 	text-align: center;
 }
@@ -1198,7 +1189,6 @@ a:hover {
 	width: 1.8rem;
 	fill: #4154f1;
 }
-
 
 .btn-sell-car {
 	gap: 1rem;
@@ -1213,95 +1203,93 @@ a:hover {
 	align-items: center;
 }
 .historySidebar {
-	margin-bottom: -70%;
+	margin-bottom: -55%;
 }
 
 /* sidebar footer area sell  end*/
 
 .profileSetting {
 	font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 36px;
-/* identical to box height, or 129% */
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 36px;
+	/* identical to box height, or 129% */
 
-letter-spacing: -0.1px;
+	letter-spacing: -0.1px;
 
-/* #0D0A19 / Primary */
+	/* #0D0A19 / Primary */
 
-color: #0D0A19;
+	color: #0d0a19;
 }
 .email {
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-letter-spacing: -0.1px;
-color: #FFFFFF;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.1px;
+	color: #ffffff;
 }
 .notifi {
 	font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 27px;
-/* identical to box height, or 135% */
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 27px;
+	/* identical to box height, or 135% */
 
-
-color: #FFFFFF;
+	color: #ffffff;
 }
-.product{ 
+.product {
 	font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-margin-top: 15px;
-letter-spacing: -0.1px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 15px;
+	letter-spacing: -0.1px;
 
-/* Greys / #9A9EA7 */
+	/* Greys / #9A9EA7 */
 
-color: #9A9EA7;
+	color: #9a9ea7;
 }
 .MessageRe {
 	font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 21px;
-letter-spacing: -0.1px;
-color: #0D0A19;
-
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.1px;
+	color: #0d0a19;
 }
 .MessageReColor {
 	font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 21px;
-/* identical to box height, or 150% */
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	/* identical to box height, or 150% */
 
-letter-spacing: -0.1px;
+	letter-spacing: -0.1px;
 
-/* Greys / #9A9EA7 */
+	/* Greys / #9A9EA7 */
 
-color: #9A9EA7;
+	color: #9a9ea7;
 }
 .updatingSetting {
-	background: #7963F0;
-border-radius: 10px;
-color: #fff;
-padding: 10px 15px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 21px;
-text-align: center;
-letter-spacing: -0.1px;
-color: #FFFFFF;
+	background: #7963f0;
+	border-radius: 10px;
+	color: #fff;
+	padding: 10px 15px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: -0.1px;
+	color: #ffffff;
 }
 .cancelBTN {
 	padding: 10px 15px;
@@ -1312,34 +1300,31 @@ color: #FFFFFF;
 	line-height: 21px;
 	text-align: center;
 	letter-spacing: -0.1px;
-	color: #9A9EA7;
-	background: #F5F6F7;
-border-radius: 10px;
-	
+	color: #9a9ea7;
+	background: #f5f6f7;
+	border-radius: 10px;
 }
 .Alerts {
 	font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-color: #0D0A19;
-
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: #0d0a19;
 }
 .AlertMessage {
 	font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-letter-spacing: -0.1px;
-color: #9A9EA7;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.1px;
+	color: #9a9ea7;
 }
 
-@media all and (max-width:767px) {
+@media all and (max-width: 767px) {
 	.switch {
 		margin-left: 170px;
-		
 	}
 	.pagetitle {
 		display: none !important;

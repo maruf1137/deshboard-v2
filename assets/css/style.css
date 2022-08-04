@@ -585,10 +585,10 @@
 	min-height: 100vh;
 	/* border-right: 1px solid #eeeeee !important; */
 	background-color: var(--color-white);
-	position: fixed !important;
+	/* position: fixed !important;
 	top: 0;
 	left: 0;
-	height: 100vh !important;
+	height: 100vh !important; */
 }
 
 .sidebar::-webkit-scrollbar {
