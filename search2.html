@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+		<title></title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.gstatic.com" rel="preconnect" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+			rel="stylesheet"
+		/>
+
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+		<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+		<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+		<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+		<link href="assets/css/search2.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+	</head>
+
+	<body class="dashboard-page">
+		<!-- ======= sidebar ======= -->
+		<aside id="sidebar" class="sidebar position-absolute">
+			<button class="btn-close-sidebar">
+				<svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg>
+			</button>
+
+			<ul class="sidebar-nav" id="sidebar-nav">
+				<li class="nav-item">
+					<img class="mb-3 ms-3" src="assets/img/logo.png" alt="" />
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="index.html">
+						<img src="assets/img/dash2.png" alt="" />
+						<span class="dashBoard">Dashboard</span>
+					</a>
+				</li>
+				<!-- End Dashboard Nav -->
+
+				<li class="nav-heading">Auction</li>
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="auction2.html">
+						<i><img src="assets/img/2.png" alt="" /></i><span>Auctions</span>
+					</a>
+				</li>
+				<!-- End Components Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="auction-calendar.html">
+						<i><img src="assets/img/3.png" alt="" /></i><span>Calender</span>
+					</a>
+				</li>
+				<!-- End Forms Nav -->
+
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#tables-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i><img src="assets/img/4.png" alt="" /></i><span>Active Bids</span>
+					</a>
+				</li>
+				<!-- End Tables Nav -->
+
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#icons-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i><img src="assets/img/5.png" alt="" /></i><span>Saved</span>
+					</a>
+				</li>
+				<!-- End Icons Nav -->
+
+				<li class="nav-heading">Vehicle finder</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="history.html">
+						<i><img src="assets/img/search2.png" alt="" /></i>
+						<span>Search </span>
+					</a>
+				</li>
+				<!-- End Profile Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i><img src="assets/img/8.png" alt="" /></i>
+						<span>Listings</span>
+					</a>
+				</li>
+				<!-- End Listing Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i><img src="assets/img/9.png" alt="" /></i>
+						<span>Book Service</span>
+					</a>
+				</li>
+				<!-- End Book Service Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="help-center-2.html">
+						<i><img src="assets/img/10.png" alt="" /></i>
+						<span>Help Center</span>
+					</a>
+				</li>
+				<!-- End Register Page Nav -->
+			</ul>
+
+			<div class="sell-car-box searchSidebar">
+				<p class="text">A new way to buy modern and sell old cars</p>
+				<a href="#" class="btn btn-sell-car d-flex">
+					<svg class="icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
+					<span>sell your car</span>
+				</a>
+			</div>
+		</aside>
+		<!-- End Sidebar-->
+
+		<main id="main" class="main">
+			<div class="pagetitle d-flex">
+				<div>
+					<h1 class="page-title">Find Vehicle</h1>
+				</div>
+
+				<div class="d-flex ms-auto profile-pic">
+					<div class="notification me-2">
+						<img src="assets/img/11.png" alt="" />
+					</div>
+					<div class="Profile">
+						<img src="assets/img/profile-img.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<!-- End Page Title -->
+
+			<!-- search  -->
+
+			<section class="header-search">
+				<div class="d-flex searching justify-contetnt-between">
+					<div class="col-md-7 search-control d-flex">
+						<img src="assets/img/FSearch.png" alt="" />
+						<input type="text" placeholder="Infiniti" class="input w-100 px-3" />
+					</div>
+					<div class="col-md-5 suggetions">
+						<a href="#" class="search-suggetion">New</a>
+						<a href="#" class="search-suggetion used">Used</a>
+						<a href="#" class="search-suggetion">Auction</a>
+						<a href="#" class="search-suggetion suggetions-hide">Certified used</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="row mt-5">
+				<div class="col-md-8 flex-sm-column">
+					<!-- car list  1-->
+					<div class="mb-5">
+						<div class="CarList2 row">
+							<div class="carImage2 col-md-4">
+								<img src="assets/car-image/car2.png" class="img-fluid" alt="" />
+							</div>
+							<div class="carDetails col-md-8">
+								<div class="d-flex mt-3">
+									<div>
+										<h5 class="Audit">Used 2015 Audi S4 Premium Plus</h5>
+										<p class="Miles">11 475 Miles</p>
+									</div>
+
+									<div class="ms-auto">
+										<button type="button" class="btn btn-light dot-btn">...</button>
+									</div>
+								</div>
+								<div class="car-info2">
+									<p style="color: #9a9ea7">Blue</p>
+									<li>23 city/17 Highway</li>
+									<li>AWD</li>
+									<li>4-Cylinder Turbo</li>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="col-md-6">
+										<h3 class="Audit">$41,400</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-control" />
+					<!-- car list  2-->
+					<div class="mb-5">
+						<div class="CarList2 row">
+							<div class="carImage2 col-md-4">
+								<img src="assets/car-image/car.png" class="img-fluid" alt="" />
+							</div>
+							<div class="carDetails col-md-8">
+								<div class="d-flex mt-3">
+									<div>
+										<h3 class="Audit">2013 Suburu Forester Premium Plus</h3>
+										<p style="color: #9a9ea7">40 475 Miles away</p>
+									</div>
+
+									<div class="ms-auto">
+										<button type="button" class="btn btn-light dot-btn">...</button>
+									</div>
+								</div>
+								<div id="car-info" class="car-info2">
+									<p style="color: #9a9ea7">White</p>
+									<li>13 city/7 Highway</li>
+									<li>AWD</li>
+									<li>4-Cylinder Turbo</li>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="col-md-6">
+										<h3 class="Audit">$21,480</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-control" />
+					<!-- car list  3-->
+					<div class="mb-5">
+						<div class="CarList2 row">
+							<div class="carImage2 col-md-4">
+								<img src="assets/car-image/car6.png" class="img-fluid" alt="" />
+							</div>
+							<div class="carDetails col-md-8">
+								<div class="d-flex mt-3">
+									<div>
+										<h3 class="Audit">Used 2010 BMW X3 Sport Package</h3>
+										<p style="color: #9a9ea7">20 850 Miles</p>
+									</div>
+
+									<div class="ms-auto">
+										<button type="button" class="btn btn-light dot-btn">...</button>
+									</div>
+								</div>
+								<div class="car-info2">
+									<p style="color: #9a9ea7">Black</p>
+									<li>23 city/17 Highway</li>
+									<li>RWD</li>
+									<li>4-Cylinder</li>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="col-md-6">
+										<h3 class="Audit">$36,800</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-control" />
+					<!-- car list  4-->
+					<div class="mb-5">
+						<div class="CarList2 row">
+							<div class="carImage2 col-md-4">
+								<img src="assets/car-image/car3.png" class="img-fluid" alt="" />
+							</div>
+							<div class="carDetails col-md-8">
+								<div class="d-flex mt-3">
+									<div>
+										<h3 class="Audit">2016 Toyta BRZ</h3>
+										<p style="color: #9a9ea7">61 475 Miles</p>
+									</div>
+
+									<div class="ms-auto">
+										<button type="button" class="btn btn-light dot-btn btn2">...</button>
+									</div>
+								</div>
+								<div class="car-info2">
+									<p style="color: #9a9ea7">White</p>
+									<li>23 city/17 Highway</li>
+									<li>AWD</li>
+									<li>4-Cylinder Turbo</li>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="col-md-6">
+										<h3 class="Audit">$21,480</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-control" />
+					<!-- car list  5-->
+					<div class="mb-5">
+						<div class="CarList2 row">
+							<div class="carImage2 col-md-4">
+								<img src="assets/car-image/car4.png" class="img-fluid" alt="" />
+							</div>
+							<div class="carDetails col-md-8">
+								<div class="d-flex mt-3">
+									<div>
+										<h3 class="Audit">Used 2015 Audi S3 Premium Plus</h3>
+										<p style="color: #9a9ea7">11 475 Miles</p>
+									</div>
+
+									<div class="ms-auto">
+										<button type="button" class="btn btn-light dot-btn">...</button>
+									</div>
+								</div>
+								<div class="car-info2">
+									<p style="color: #9a9ea7">Black</p>
+									<li>15 city/8 Highway</li>
+									<li>FWD</li>
+									<li>4-Cylinder Turbo</li>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="col-md-6">
+										<h3 class="Audit">$21,400</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="hr-control" />
+					<!-- car list  6-->
+					<div class="mb-5">
+						<div class="CarList2 row">
+							<div class="carImage2 col-md-4">
+								<img src="assets/car-image/car5.png" class="img-fluid" alt="" />
+							</div>
+							<div class="carDetails col-md-8">
+								<div class="d-flex mt-3">
+									<div>
+										<h3 class="Audit">2019 Fiat 500</h3>
+										<p style="color: #9a9ea7">145 500 Miles</p>
+									</div>
+
+									<div class="ms-auto">
+										<button type="button" class="btn btn-light dot-btn btn2">...</button>
+									</div>
+								</div>
+								<div class="car-info2">
+									<p style="color: #9a9ea7">White</p>
+									<li>15 city/8 Highway</li>
+									<li>FWD</li>
+									<li>4-Cylinder</li>
+								</div>
+								<div class="d-flex mt-3">
+									<div class="col-md-6">
+										<h3 class="Audit">$22,500</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Right sidebar start -->
+				<div class="col-md-4">
+					<div class="d-flex">
+						<div class="sidebar-icon me-3">
+							<img src="assets/img/filter.png" alt="" />
+						</div>
+						<div>
+							<h3 class="filterby">Filter by</h3>
+						</div>
+					</div>
+
+					<div class="accordion accordion-flush" id="accordionFlushExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOne">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseOne"
+									aria-expanded="false"
+									aria-controls="flush-collapseOne"
+								>
+									<h3 class="filterBy">Year</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseOne"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingOne"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the first item's accordion body.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTwo">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseTwo"
+									aria-expanded="false"
+									aria-controls="flush-collapseTwo"
+								>
+									<h3 class="filterBy">Model</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseTwo"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingTwo"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the second item's accordion body.
+									Let's imagine this being filled with some actual content.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingThree">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseThree"
+									aria-expanded="false"
+									aria-controls="flush-collapseThree"
+								>
+									<h3 class="filterBy">Make</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseThree"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingThree"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the third item's accordion body.
+									Nothing more exciting happening here in terms of content, but just filling up the
+									space to make it look, at least at first glance, a bit more representative of how
+									this would look in a real-world application.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingFour">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseFour"
+									aria-expanded="false"
+									aria-controls="flush-collapseFour"
+								>
+									<h3 class="filterBy">Transmission</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseFour"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingFour"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the third item's accordion body.
+									Nothing more exciting happening here in terms of content, but just filling up the
+									space to make it look, at least at first glance, a bit more representative of how
+									this would look in a real-world application.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingFive">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseFive"
+									aria-expanded="false"
+									aria-controls="flush-collapseFive"
+								>
+									<h3 class="filterBy">Body style</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseFive"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingFive"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the third item's accordion body.
+									Nothing more exciting happening here in terms of content, but just filling up the
+									space to make it look, at least at first glance, a bit more representative of how
+									this would look in a real-world application.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingSix">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseSix"
+									aria-expanded="false"
+									aria-controls="flush-collapseSix"
+								>
+									<h3 class="filterBy">Engine</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseSix"
+								class="accordion-collapse"
+								aria-labelledby="flush-headingSix"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									<div>
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="checkbox"
+												value=""
+												id="flexCheckDefault"
+												checked
+											/>
+											<label class="form-check-label" for="flexCheckDefault">
+												<h3 class="LabelMaking">3.5 V-6 cyl</h3>
+											</label>
+										</div>
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="checkbox"
+												value=""
+												id="flexCheckDefault"
+											/>
+											<label class="form-check-label" for="flexCheckDefault">
+												<h3 class="LabelMaking1">3.7 V-6 cyl</h3>
+											</label>
+										</div>
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="checkbox"
+												value=""
+												id="flexCheckChecked"
+											/>
+											<label class="form-check-label" for="flexCheckChecked">
+												<h3 class="LabelMaking1">4.5 V-6 cyl</h3>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingSeven">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseSeven"
+									aria-expanded="true"
+									aria-controls="flush-collapseSeven"
+								>
+									<h3 class="filterBy">Drive train</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseSeven"
+								class="accordion-collapse"
+								aria-labelledby="flush-headingThree"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									<div class="row">
+										<div class="d-flex">
+											<div class="col-md-8">
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="checkbox"
+														value=""
+														id="flexCheckChecked"
+														checked
+													/>
+													<label class="form-check-label" for="flexCheckChecked">
+														<h3 class="LabelMaking">4 WD</h3>
+													</label>
+												</div>
+												<div class="form-check">
+													<input
+														class="form-check-input"
+														type="checkbox"
+														value=""
+														id="flexCheckDefault"
+													/>
+													<label class="form-check-label" for="flexCheckDefault">
+														<h3 class="LabelMaking1">RWD</h3>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingEight">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseEight"
+									aria-expanded="false"
+									aria-controls="flush-collapseEight"
+								>
+									<h3 class="filterBy">Interior</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseEight"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingEight"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the third item's accordion body.
+									Nothing more exciting happening here in terms of content, but just filling up the
+									space to make it look, at least at first glance, a bit more representative of how
+									this would look in a real-world application.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingNine">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseNine"
+									aria-expanded="false"
+									aria-controls="flush-collapseNine"
+								>
+									<h3 class="filterBy">Color</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseNine"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingNine"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the third item's accordion body.
+									Nothing more exciting happening here in terms of content, but just filling up the
+									space to make it look, at least at first glance, a bit more representative of how
+									this would look in a real-world application.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTen">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseTen"
+									aria-expanded="false"
+									aria-controls="flush-collapseTen"
+								>
+									<h3 class="filterBy">Price</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseTen"
+								class="accordion-collapse collapse show"
+								aria-labelledby="flush-headingTen"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									<div class="PriceMoney">
+										<p>
+											<span class="StartPrice">$15.700</span> <span class="EndPrice">$38.990</span>
+										</p>
+									</div>
+									<div class="PriceImg">
+										<img src="assets/img/price2.PNG" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingEleven">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseEleven"
+									aria-expanded="false"
+									aria-controls="flush-collapseEleven"
+								>
+									<h3 class="filterBy">Features</h3>
+								</button>
+							</h2>
+							<div
+								id="flush-collapseEleven"
+								class="accordion-collapse collapse"
+								aria-labelledby="flush-headingEleven"
+								data-bs-parent="#accordionFlushExample"
+							>
+								<div class="accordion-body">
+									Placeholder content for this accordion, which is intended to demonstrate the
+									<code>.accordion-flush</code> class. This is the third item's accordion body.
+									Nothing more exciting happening here in terms of content, but just filling up the
+									space to make it look, at least at first glance, a bit more representative of how
+									this would look in a real-world application.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- pagination start -->
+			<div class="pagination d-flex align-items-center justify-content-start">
+				<button class="btn btn-prev-pagination d-none p-0 flex-between gap-1">
+					<!-- <svg class="icon icon-arrow-left">
+          <use xlink:href="assets/img/icons.svg#icon-arrow-left"></use>
+        </svg> -->
+					<svg
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						class="icon"
+					>
+						<path
+							d="M12.707 18.293l-5.293-5.293h11.586c0.552 0 1-0.448 1-1s-0.448-1-1-1h-11.586l5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-7 7c-0.096 0.096-0.168 0.206-0.217 0.324-0.051 0.122-0.076 0.253-0.076 0.383 0 0.256 0.098 0.512 0.293 0.707l7 7c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"
+						></path>
+					</svg>
+					<span>prev</span>
+				</button>
+				<div class="pagination-btns d-flex align-items-center gap-1">
+					<button class="btn btn-pagination active">1</button>
+					<button class="btn btn-pagination">2</button>
+					<button class="btn btn-pagination">3</button>
+					<button class="btn btn-pagination">4</button>
+					<button class="btn btn-pagination">5</button>
+				</div>
+				<button class="btn btn-next-pagination flex-between gap-1">
+					<span class="me-2">next</span>
+					<img src="assets/img/next.png" alt="" />
+				</button>
+			</div>
+
+			<!-- Remove the container if you want to extend the Footer to full width. -->
+			<div class="mt-5">
+				<!-- Footer -->
+				<footer class="text-center text-lg-start text-white FooterArea">
+					<!-- Section: Links  -->
+					<section class="">
+						<div class="container text-center text-md-start mt-5">
+							<!-- Grid row -->
+							<div class="row mt-3">
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">About</h6>
+									<p>
+										<a href=""> How it works</a>
+									</p>
+									<p>
+										<a href="">Careers</a>
+									</p>
+									<p>
+										<a href="">About us</a>
+									</p>
+
+									<p>
+										<a href="">Media</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Community</h6>
+									<p>
+										<a href="">Against Discrimination</a>
+									</p>
+									<p>
+										<a href="">Invite friends</a>
+									</p>
+									<p>
+										<a href="">Gift cards</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Become seller</h6>
+									<p>
+										<a href="">Add your vehicle</a>
+									</p>
+									<p>
+										<a href="">Business account</a>
+									</p>
+									<p>
+										<a href="">Community</a>
+									</p>
+
+									<p>
+										<a href="">Media</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Bookings support</h6>
+									<p>
+										<a href="">Updates for COVID-19</a>
+									</p>
+									<p>
+										<a href="">Help Center</a>
+									</p>
+									<p>
+										<a href="">Support</a>
+									</p>
+
+									<p>
+										<a href="">Trust & Safety</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+							</div>
+							<!-- Grid row -->
+						</div>
+					</section>
+					<!-- Section: Links  -->
+				</footer>
+				<!-- Copyright -->
+				<div class="FooterTextArea">
+					<div class="TermText">
+						<p>
+							<a href="" class="Privacy">Privacy Policy </a>
+							<a href="" class="Term">Term of Use</a>
+							<span class="reserved"> © 2021 All rights reserved</span>
+						</p>
+					</div>
+
+					<div class="ms-auto">
+						<img src="assets/img/Language.png" alt="" />
+						<img src="assets/img/Currency.png" alt="" class="ms-2" />
+					</div>
+				</div>
+				<!-- Copyright -->
+				<!-- Footer -->
+			</div>
+		</main>
+		<!-- End #main -->
+
+		<!-- overlay -->
+		<div class="overlay"></div>
+		<!-- mbl nav bar start -->
+		<nav class="mblNav">
+			<ul class="mblNav-list">
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M4.801 15.199c1.461 1.432 3.194 2.148 5.199 2.148s3.724-0.716 5.156-2.148c1.461-1.461 2.192-3.194 2.192-5.199s-0.731-3.724-2.192-5.156c-1.432-1.461-3.151-2.191-5.156-2.191s-3.738 0.73-5.199 2.191c-1.432 1.432-2.148 3.151-2.148 5.156s0.716 3.738 2.148 5.199zM3.512 3.555c1.805-1.805 3.967-2.707 6.488-2.707s4.669 0.902 6.445 2.707c1.805 1.776 2.707 3.924 2.707 6.445s-0.902 4.684-2.707 6.488c-1.776 1.776-3.924 2.664-6.445 2.664s-4.684-0.888-6.488-2.664c-1.776-1.805-2.664-3.967-2.664-6.488s0.888-4.669 2.664-6.445zM12.063 4.973c0.745 0.315 1.346 0.702 1.805 1.16s0.845 1.060 1.16 1.805c0.315 0.745 0.473 1.432 0.473 2.063s-0.158 1.318-0.473 2.063c-0.286 0.745-0.659 1.346-1.117 1.805-1.060 1.088-2.349 1.633-3.867 1.633s-2.822-0.544-3.91-1.633l3.867-3.867v-5.5c0.63 0 1.318 0.158 2.063 0.473z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-1"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M3.203 7.891l4.688 4.727-2.344 2.344-4.727-4.687 2.383-2.383zM10.273 0.82l4.687 4.727-2.344 2.344-4.727-4.688 2.383-2.383zM4.375 6.719l2.344-2.344 11.797 11.797-2.344 2.344-11.797-11.797zM0.82 17.5h10v1.68h-10v-1.68z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-2"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M10.848 12.848v1.805h-6.445v-1.805h6.445zM15.402 17.402v-10.055h-12.805v10.055h12.805zM15.402 2.75c0.487 0 0.917 0.186 1.289 0.559s0.559 0.802 0.559 1.289v12.805c0 0.487-0.186 0.917-0.559 1.289s-0.802 0.559-1.289 0.559h-12.805c-0.516 0-0.96-0.172-1.332-0.516-0.344-0.372-0.516-0.816-0.516-1.332v-12.805c0-0.487 0.172-0.917 0.516-1.289 0.372-0.372 0.816-0.559 1.332-0.559h0.902v-1.848h1.848v1.848h7.305v-1.848h1.848v1.848h0.902zM13.598 9.152v1.848h-9.195v-1.848h9.195z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-3"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M10.525 5.942v4.297l3.533 2.148-0.716 1.241-4.345-2.626v-5.061h1.528zM19.167 8.090h-6.923l2.817-2.865c-1.4-1.4-3.087-2.101-5.061-2.101-1.942-0.032-3.613 0.637-5.013 2.005-0.573 0.573-1.066 1.353-1.48 2.339-0.414 0.955-0.621 1.83-0.621 2.626s0.207 1.687 0.621 2.674c0.414 0.955 0.907 1.719 1.48 2.292s1.353 1.066 2.339 1.48c0.987 0.414 1.878 0.621 2.674 0.621s1.687-0.207 2.674-0.621c1.019-0.414 1.814-0.907 2.387-1.48 1.369-1.369 2.053-3.024 2.053-4.965h2.053c0 2.515-0.891 4.647-2.674 6.398-1.782 1.782-3.947 2.674-6.493 2.674s-4.711-0.891-6.493-2.674c-1.782-1.751-2.674-3.867-2.674-6.35 0-2.514 0.891-4.663 2.674-6.445 0.732-0.732 1.719-1.353 2.96-1.862 1.273-0.541 2.435-0.812 3.485-0.812s2.196 0.271 3.438 0.812c1.273 0.509 2.276 1.13 3.008 1.862l2.769-2.865v7.257z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item sidebar-toggle-btn">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-4"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M1.25 0.833h27.5v3.079h-27.5v-3.079zM1.25 11.504v-3.008h27.5v3.008h-27.5zM1.25 19.167v-3.079h27.5v3.079h-27.5z"
+							></path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- mbl nav bar end -->
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+		<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/chart.js/chart.min.js"></script>
+		<script src="assets/vendor/echarts/echarts.min.js"></script>
+		<script src="assets/vendor/quill/quill.min.js"></script>
+		<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+		<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			const data = {
+				labels: ['Jan 15', 'Jan 16', 'Jan 17', 'Jan 18', 'Jan 19', 'Jan 20', 'Jan 21'],
+				datasets: [
+					{
+						data: [12, 6, 9, 12, 3, 9, 2],
+						backgroundColor: [
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+						],
+
+						borderRadius: 2,
+						borderSkipped: false,
+						barPercentage: 0.5,
+						categoryPercentage: 0.5,
+					},
+				],
+			};
+
+			// config
+			const config = {
+				type: 'bar',
+				data,
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true,
+							grid: {
+								borderColor: 'green',
+								borderWidth: '3',
+								drawBorder: false,
+								drawOnChartArea: false,
+							},
+						},
+						x: {
+							grid: {
+								drawBorder: false,
+								display: true,
+								lineWidth: 5,
+								drawOnChartArea: false,
+							},
+						},
+					},
+					plugins: {
+						tooltip: {
+							yAlign: 'bottom',
+						},
+						legend: {
+							display: false,
+						},
+					},
+				},
+			};
+			// render init block
+			const myChart = new Chart(document.getElementById('myChart'), config);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,184 @@
+/* ============================ */
+/* extra large device 1,082px */
+/* ============================ */
+@media (max-width: 67.625em) {
+	.CarBox {
+		display: flex;
+		height: auto;
+	}
+
+	/* auction calendar table */
+	.table-item {
+		padding: 1.6rem 1.4rem;
+	}
+
+	/* login page */
+	.SignUpHead {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 5rem;
+		line-height: 6rem;
+		margin-top: 4.2rem;
+		color: #ffffff;
+		text-align: justify;
+		margin-left: 4.2rem;
+	}
+}
+
+/* ============================ */
+/* large device 992px */
+/* ============================ */
+@media (max-width: 62em) {
+	html {
+		font-size: 56%;
+	}
+	.page {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		/* display: block; */
+	}
+
+	#main {
+		transition: all 0.3s;
+		padding: 12px 14px;
+		margin-bottom: 8rem;
+		grid-column: 1/-1;
+	}
+
+	.sidebar {
+		position: fixed !important;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		max-width: 100vw !important;
+		width: 50%;
+		height: 100vh;
+		transform: translate(-100%);
+	}
+
+	.mblNav {
+		display: block;
+	}
+
+	.btn-close-sidebar {
+		display: block;
+	}
+
+	.overlay {
+		display: block;
+	}
+
+	.FooterTextArea {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.FooterTextArea .ms-auto {
+		margin-left: 0 !important;
+	}
+
+	/* sign in page */
+	.login-page {
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.signin-img {
+		border-radius: 0;
+	}
+
+	.signin-content-area {
+		position: relative;
+		z-index: 5;
+		width: 100%;
+		margin-top: -74rem;
+		border-radius: 16px 16px 0px 0px;
+	}
+
+	.signin-btns .btn {
+		display: block;
+	}
+}
+
+/* ============================ */
+/* madium device 768px */
+/* ============================ */
+@media (max-width: 48em) {
+	.discussion-item {
+		flex-direction: column;
+		justify-content: start !important;
+		align-items: start !important;
+	}
+
+	.discussion-right {
+		margin-left: 6rem;
+	}
+
+	/* auction calendar */
+	.calendar {
+		border: none;
+	}
+	.pagetitle .btn {
+		height: 3.6rem;
+		width: 3.6rem;
+		padding: 0;
+	}
+	.calendar-header {
+		background-color: #f5f6f7;
+		/* transform: scaleX(1.1); */
+		padding: 2.8rem 5.3rem;
+	}
+	.calendar-header .btn-swith-months {
+		background-color: #f5f6f7 !important;
+	}
+
+	/* auction calendar table */
+	.table-item {
+		padding: 1.6rem 0.8rem;
+	}
+}
+
+/* ============================ */
+/* small device 576px */
+/* ============================ */
+@media (max-width: 36em) {
+	html {
+		font-size: 48%;
+	}
+	.sidebar {
+		max-width: 100vw !important;
+		width: 100vw !important;
+	}
+
+	/* auction 2 */
+
+	.auction2-header {
+		border: 1px solid #ede8e9;
+	}
+	.auction2-header h5 {
+		/* font-size: ; */
+	}
+	.auction2-header {
+		border: 1px solid #ede8e9;
+	}
+
+	/* auction err */
+	.auction-err .auction2 .form {
+		border: 1px solid #ede8e9;
+		box-shadow: 0px 0px 0px rgba(153, 155, 168, 0.15);
+	}
+	.auction-err .auction2 .form .btn {
+		background-color: transparent;
+	}
+
+	.auction-err .auction2 .form .btn .icon {
+		fill: #000;
+		height: 2.2rem;
+	}
+
+	.signin-content-area {
+		margin-top: -85rem;
+	}
+}

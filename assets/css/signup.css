@@ -1,0 +1,253 @@
+:root {
+	scroll-behavior: smooth;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-gray: #f5f6f7;
+	--color-primary: #4154f1;
+	--color-secondary: #717ff5;
+	--color-tirtiary: #7963f0;
+}
+
+.login-page {
+	padding: 3rem;
+	height: 100vh;
+	width: 100%;
+}
+
+.signin {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+.signin-image-area {
+	height: 100%;
+	/* overflow: hidden; */
+	border-radius: 2rem;
+}
+.signin-img {
+	border-radius: 2rem;
+	background-image: url('../img/signin-bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.signin-img img {
+	border-radius: 2rem;
+}
+/* .signin-img img {
+} */
+.signin-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(13, 10, 25, 0.75);
+	backdrop-filter: blur(10.8731px);
+	padding: 3rem 6rem;
+	border-radius: 0 0 2rem 2rem;
+}
+.signin-footer .link-btn {
+	color: var(--color-white);
+	transition: all 0.3s;
+}
+.signin-footer .link-btn:hover {
+	color: var(--color-tirtiary);
+}
+.signin-footer .btn-signup {
+	background-color: var(--color-tirtiary);
+	color: var(--color-white);
+	border-radius: 1rem;
+}
+.signin-footer .btn-signup:hover {
+	background-color: var(--color-white);
+	color: var(--color-tirtiary);
+	border-radius: 1rem;
+}
+
+.signin-content-area {
+	background-color: var(--color-white);
+}
+.signin-content {
+	max-width: 42rem;
+	margin: 0 auto;
+	padding: 7rem 0;
+	text-align: center;
+}
+.signin-logo {
+	height: 4rem;
+	width: 4rem;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.signin-card {
+	border: 1px solid #eeeeee;
+	border-radius: 8px;
+	padding: 1.7rem 2rem;
+	text-align: left;
+}
+.signin-card label {
+	color: #9a9ea7;
+	font-size: 12px;
+	/* transform: translateY(3.2rem); */
+	/* pointer-events: none; */
+}
+/* .signin-card label {
+	color: #9a9ea7;
+	font-size: 12px;
+} */
+.signin-card .input {
+	color: #0d0a19;
+	font-weight: 700;
+	font-size: 14px;
+	/* border: 1px solid red; */
+	padding: 0.2rem;
+}
+
+.signin-card .icon {
+	fill: #0d0a19;
+}
+.signin-img .icon {
+	position: absolute;
+	top: 3.5rem;
+	left: 1.5rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	fill: #fff;
+}
+.signin .btn-submit {
+	border: 2px solid var(--color-tirtiary);
+}
+.signin .btn-submit:hover {
+	color: var(--color-tirtiary) !important;
+}
+
+/* radio button */
+.radio {
+	display: block;
+	position: relative;
+	padding-left: 10px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	/* font-size: 22px; */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Hide the browser's default radio button */
+.radio input {
+	position: absolute;
+	opacity: 1;
+	cursor: pointer;
+	top: -0.6rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	left: 0;
+	/* margin-top: -0.6rem; */
+	z-index: 2;
+	opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: -0.6rem;
+	left: 0;
+	height: 2.5rem;
+	width: 2.5rem;
+	background: #a2f3d9;
+	border-radius: 50%;
+	/* margin-top: -0.6rem; */
+}
+
+/* On mouse-over, add a grey background color */
+/* .radio:hover input ~ .checkmark {
+	background-color: #ccc;
+} */
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkmark {
+	background: #f5f6f7;
+}
+
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+.radio input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkmark:after {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+	background: white;
+}
+
+/* sign in line */
+.signin-lines {
+}
+.signin-lines .line {
+	width: 100%;
+	height: 2px;
+	background-color: #eee;
+}
+
+/* third party log in */
+
+.signin-btns .btn {
+	border: 1px solid #eeeeee;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: start;
+	justify-items: start;
+}
+
+/* signup fixing start  */
+
+.heading {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: -0.1px;
+	color: #0d0a19;
+}
+.Agree {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.1px;
+	color: #9a9ea7;
+}
+.recover {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.SignUpHead {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 78px;
+	margin-top: 50px;
+	color: #ffffff;
+	text-align: justify;
+	margin-left: 50px;
+}
+
+/* signup fixing start  */

@@ -1,0 +1,193 @@
+/* ========================== */
+/* help center css */
+/* ========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nuosu+SIL&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ========================== */
+/* base */
+/* ========================== */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Inter', sans-serif !important;
+	text-transform: capitalize;
+	text-decoration: none;
+	list-style-type: none;
+}
+:root {
+	scroll-behavior: smooth;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-primary: #4154f1;
+	--color-secondary: #717ff5;
+	--color-tirtiary: #7963f0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Inter', sans-serif !important;
+	font-size: 1.4rem;
+	overflow-x: hidden;
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.help-center-page .sidebar {
+	height: 142%;
+}
+
+.btn-icon {
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+	background: #f5f6f7;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+/* ========================== */
+/* page title */
+/* ========================== */
+
+.notification {
+	margin-right: 2rem;
+	position: relative;
+}
+
+.notification span {
+	height: 0.4rem;
+	width: 0.4rem;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.dashBoardImages form {
+	background-color: var(--color-white);
+	border: 1px solid #eeeeee;
+	border-radius: 0.8rem;
+	max-width: 74rem;
+	margin: 0 auto;
+}
+
+.dashBoardImages form .input {
+	padding: 1.4rem 2rem;
+}
+.dashBoardImages form .btn {
+	height: 4rem;
+	width: 4rem;
+	background: var(--color-tirtiary);
+	border-radius: 1rem;
+	margin-right: 1rem;
+}
+
+.dashBoardImages form .btn .icon {
+	fill: var(--color-white);
+}
+
+/* ========================== */
+/* article */
+/* ========================== */
+
+.article-item {
+	background: #ffffff;
+	border: 1px solid #e4e6e8;
+	border-radius: 6px;
+	padding: 3rem 2.4rem;
+	height: 100%;
+	border-top: 4px solid #7963f0;
+}
+.btn-article {
+	padding: 0;
+	border: none;
+	outline: none;
+	margin-top: 2rem;
+}
+.article-title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 27px;
+	color: #0d0a19;
+	margin-bottom: 1rem;
+}
+
+/* ========================== */
+/* discussion */
+/* ========================== */
+.discussion {
+}
+.discussion-list {
+	border-top: 1px solid #ede8e9;
+}
+.discussion-item {
+	border-bottom: 1px solid #ede8e9;
+	padding: 1.4rem 0;
+}
+.discussion-left {
+	gap: 2rem;
+}
+.discussion-img {
+	height: 4.8rem;
+	width: 4.8rem;
+}
+.discussion-img img {
+	height: 100%;
+	width: 100%;
+}
+.discussion-title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+}
+.discussion-date {
+	gap: 0.8rem;
+}
+
+.discussion-right {
+	gap: 1rem;
+}
+.discussion-right .view,
+.discussion-right .message {
+	gap: 0.6rem;
+}
+.discussion-right .icon {
+	fill: #9a9ea7;
+}
+
+/* ========================== */
+/* footer */
+/* ========================== */
+.footer-card {
+	max-width: 75rem;
+	margin: 0 auto;
+}
+
+.footer-card .btn {
+	color: var(--color-white);
+}
+.footer-card .btn:hover {
+	color: var(--color-white);
+	background-color: var(--color-secondary);
+}
+
+.MarginDown {
+	margin-bottom: -415px;
+}
+.helpFooter {
+	background-color: #f5f6f7;
+	padding: 10px 30px;
+	width: 100% !important;
+}
+
+/* .icon {
+    fill: #7963F0;
+} */

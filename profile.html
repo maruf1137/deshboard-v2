@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+		<title></title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.gstatic.com" rel="preconnect" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+			rel="stylesheet"
+		/>
+
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+		<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+		<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+		<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+		<link href="assets/css/profile.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+	</head>
+
+	<body class="dashboard-page">
+		<!-- ======= sidebar ======= -->
+		<aside id="sidebar" class="sidebar position-absolute">
+			<button class="btn-close-sidebar">
+				<svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg>
+			</button>
+			<ul class="sidebar-nav" id="sidebar-nav">
+				<li class="nav-item">
+					<img class="mb-3 ms-3" src="assets/img/logo.png" alt="" />
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">
+						<img src="assets/img/dash2.png" alt="" />
+						<span class="dashBoard">Dashboard</span>
+					</a>
+				</li>
+				<!-- End Dashboard Nav -->
+
+				<li class="nav-heading">Auction</li>
+
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#components-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i><img src="assets/img/2.png" alt="" /></i><span>Auctions</span>
+					</a>
+				</li>
+				<!-- End Components Nav -->
+
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#forms-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i><img src="assets/img/3.png" alt="" /></i><span>Calender</span>
+					</a>
+				</li>
+				<!-- End Forms Nav -->
+
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#tables-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i><img src="assets/img/4.png" alt="" /></i><span>Active Bids</span>
+					</a>
+				</li>
+				<!-- End Tables Nav -->
+
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#icons-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i><img src="assets/img/5.png" alt="" /></i><span>Saved</span>
+					</a>
+				</li>
+				<!-- End Icons Nav -->
+
+				<li class="nav-heading">Vehicle finder</li>
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i><img src="assets/img/6.png" alt="" /></i>
+						<span>Search </span>
+					</a>
+				</li>
+				<!-- End Profile Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i><img src="assets/img/8.png" alt="" /></i>
+						<span>Listings</span>
+					</a>
+				</li>
+				<!-- End Listing Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i><img src="assets/img/9.png" alt="" /></i>
+						<span>Book Service</span>
+					</a>
+				</li>
+				<!-- End Book Service Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i><img src="assets/img/10.png" alt="" /></i>
+						<span>Help Center</span>
+					</a>
+				</li>
+				<!-- End Register Page Nav -->
+			</ul>
+
+			<div class="sell-car-box ProfileDown">
+				<p class="text">A new way to buy modern and sell old cars</p>
+				<a href="#" class="btn btn-sell-car d-flex">
+					<svg class="icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
+					<span>sell your car</span>
+				</a>
+			</div>
+		</aside>
+		<!-- End Sidebar-->
+
+		<main id="main" class="main">
+			<div class="pagetitle d-flex">
+				<div>
+					<h1 class="proSt">Profile Settings</h1>
+				</div>
+
+				<div class="d-flex ms-auto">
+					<div class="notification me-2">
+						<img src="assets/img/11.png" alt="" />
+					</div>
+					<div class="Profile">
+						<img src="assets/img/profile-img.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<!-- End Page Title -->
+
+			<div class="dashBoardImages">
+				<div class="header-maricano">
+					<img src="assets/img/marico.png" alt="" />
+					<h3 class="ProName">Hector Maricano</h3>
+					<span class="mail"> h.maricano@gmail.com</span>
+				</div>
+			</div>
+
+			<section>
+				<div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card-design">
+								<div class="d-flex mt-3">
+									<div class="carIcon me-3">
+										<img src="assets/img/profile-icon.png" alt="" />
+									</div>
+									<div class="mb-3">
+										<h3 class="accountInfo">Account information</h3>
+										<span class="Accountp">Profile photo and name</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card-design">
+								<div class="d-flex mt-3">
+									<div class="carIcon me-3">
+										<img src="assets/img/security-icon.png" alt="" />
+									</div>
+									<div class="mb-3">
+										<h3 class="accountInfo">Security</h3>
+										<span class="Accountp">Your credentials</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card-design">
+								<div class="d-flex mt-3">
+									<div class="carIcon me-3">
+										<img src="assets/img/login-icon.png" alt="" />
+									</div>
+									<div class="mb-3">
+										<h3 class="accountInfo">Login details</h3>
+										<span class="Accountp">Password & security</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mt-5 notificatin-info">
+				<div class=" ">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card-design">
+								<div class="d-flex mt-3">
+									<div class="carIcon me-3">
+										<img src="assets/img/biling-icon.png" alt="" />
+									</div>
+									<div class="mb-3">
+										<h3 class="accountInfo">Billing</h3>
+										<span class="Accountp">Setup Payment Method</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card-design">
+								<div class="d-flex mt-3">
+									<div class="carIcon me-3">
+										<img src="assets/img/notification-icon.png" alt="" />
+									</div>
+									<div class="mb-3">
+										<h3 class="accountInfo">Notifications</h3>
+										<span class="Accountp">Your email notifications</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card-design">
+								<div class="d-flex mt-3">
+									<div class="carIcon me-3">
+										<img src="assets/img/privacy-icon.png" alt="" />
+									</div>
+									<div class="mb-3">
+										<h3 class="accountInfo">Privacy</h3>
+										<span class="Accountp">Linked apps and services</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mt-5">
+				<div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card-design">
+								<div class="d-flex mt-3">
+									<div class="carIcon me-3">
+										<img src="assets/img/settings-icon.png" alt="" />
+									</div>
+									<div class="mb-3">
+										<h3 class="accountInfo">Global preferences</h3>
+										<span class="Accountp">currency and language</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="card-design">
+								<div class="d-flex mt-3">
+									<div class="carIcon me-3">
+										<img src="assets/img/bussiness-icon.png" alt="" />
+									</div>
+									<div class="mb-3">
+										<h3 class="accountInfo">Business account</h3>
+										<span class="Accountp">Team for collaboration</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Remove the container if you want to extend the Footer to full width. -->
+			<div class="mt-5">
+				<!-- Footer -->
+				<footer class="text-center text-lg-start text-white FooterArea">
+					<!-- Section: Links  -->
+					<section class="">
+						<div class="container text-center text-md-start mt-5">
+							<!-- Grid row -->
+							<div class="row mt-3">
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">About</h6>
+									<p>
+										<a href=""> How it works</a>
+									</p>
+									<p>
+										<a href="">Careers</a>
+									</p>
+									<p>
+										<a href="">About us</a>
+									</p>
+
+									<p>
+										<a href="">Media</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Community</h6>
+									<p>
+										<a href="">Against Discrimination</a>
+									</p>
+									<p>
+										<a href="">Invite friends</a>
+									</p>
+									<p>
+										<a href="">Gift cards</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Become seller</h6>
+									<p>
+										<a href="">Add your vehicle</a>
+									</p>
+									<p>
+										<a href="">Business account</a>
+									</p>
+									<p>
+										<a href="">Community</a>
+									</p>
+
+									<p>
+										<a href="">Media</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Bookings support</h6>
+									<p>
+										<a href="">Updates for COVID-19</a>
+									</p>
+									<p>
+										<a href="">Help Center</a>
+									</p>
+									<p>
+										<a href="">Support</a>
+									</p>
+
+									<p>
+										<a href="">Trust & Safety</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+							</div>
+							<!-- Grid row -->
+						</div>
+					</section>
+					<!-- Section: Links  -->
+				</footer>
+				<!-- Copyright -->
+				<div class="FooterTextArea">
+					<div class="TermText">
+						<p>
+							<a href="" class="Privacy">Privacy Policy </a>
+							<a href="" class="Term">Term of Use</a>
+							<span class="reserved"> © 2021 All rights reserved</span>
+						</p>
+					</div>
+
+					<div class="ms-auto">
+						<img src="assets/img/Language.png" alt="" />
+						<img src="assets/img/Currency.png" alt="" class="ms-2" />
+					</div>
+				</div>
+				<!-- Copyright -->
+				<!-- Footer -->
+			</div>
+		</main>
+		<!-- End #main -->
+
+		<!-- overlay -->
+		<div class="overlay"></div>
+		<!-- mbl nav bar start -->
+		<nav class="mblNav">
+			<ul class="mblNav-list">
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M4.801 15.199c1.461 1.432 3.194 2.148 5.199 2.148s3.724-0.716 5.156-2.148c1.461-1.461 2.192-3.194 2.192-5.199s-0.731-3.724-2.192-5.156c-1.432-1.461-3.151-2.191-5.156-2.191s-3.738 0.73-5.199 2.191c-1.432 1.432-2.148 3.151-2.148 5.156s0.716 3.738 2.148 5.199zM3.512 3.555c1.805-1.805 3.967-2.707 6.488-2.707s4.669 0.902 6.445 2.707c1.805 1.776 2.707 3.924 2.707 6.445s-0.902 4.684-2.707 6.488c-1.776 1.776-3.924 2.664-6.445 2.664s-4.684-0.888-6.488-2.664c-1.776-1.805-2.664-3.967-2.664-6.488s0.888-4.669 2.664-6.445zM12.063 4.973c0.745 0.315 1.346 0.702 1.805 1.16s0.845 1.060 1.16 1.805c0.315 0.745 0.473 1.432 0.473 2.063s-0.158 1.318-0.473 2.063c-0.286 0.745-0.659 1.346-1.117 1.805-1.060 1.088-2.349 1.633-3.867 1.633s-2.822-0.544-3.91-1.633l3.867-3.867v-5.5c0.63 0 1.318 0.158 2.063 0.473z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-1"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M3.203 7.891l4.688 4.727-2.344 2.344-4.727-4.687 2.383-2.383zM10.273 0.82l4.687 4.727-2.344 2.344-4.727-4.688 2.383-2.383zM4.375 6.719l2.344-2.344 11.797 11.797-2.344 2.344-11.797-11.797zM0.82 17.5h10v1.68h-10v-1.68z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-2"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M10.848 12.848v1.805h-6.445v-1.805h6.445zM15.402 17.402v-10.055h-12.805v10.055h12.805zM15.402 2.75c0.487 0 0.917 0.186 1.289 0.559s0.559 0.802 0.559 1.289v12.805c0 0.487-0.186 0.917-0.559 1.289s-0.802 0.559-1.289 0.559h-12.805c-0.516 0-0.96-0.172-1.332-0.516-0.344-0.372-0.516-0.816-0.516-1.332v-12.805c0-0.487 0.172-0.917 0.516-1.289 0.372-0.372 0.816-0.559 1.332-0.559h0.902v-1.848h1.848v1.848h7.305v-1.848h1.848v1.848h0.902zM13.598 9.152v1.848h-9.195v-1.848h9.195z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-3"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M10.525 5.942v4.297l3.533 2.148-0.716 1.241-4.345-2.626v-5.061h1.528zM19.167 8.090h-6.923l2.817-2.865c-1.4-1.4-3.087-2.101-5.061-2.101-1.942-0.032-3.613 0.637-5.013 2.005-0.573 0.573-1.066 1.353-1.48 2.339-0.414 0.955-0.621 1.83-0.621 2.626s0.207 1.687 0.621 2.674c0.414 0.955 0.907 1.719 1.48 2.292s1.353 1.066 2.339 1.48c0.987 0.414 1.878 0.621 2.674 0.621s1.687-0.207 2.674-0.621c1.019-0.414 1.814-0.907 2.387-1.48 1.369-1.369 2.053-3.024 2.053-4.965h2.053c0 2.515-0.891 4.647-2.674 6.398-1.782 1.782-3.947 2.674-6.493 2.674s-4.711-0.891-6.493-2.674c-1.782-1.751-2.674-3.867-2.674-6.35 0-2.514 0.891-4.663 2.674-6.445 0.732-0.732 1.719-1.353 2.96-1.862 1.273-0.541 2.435-0.812 3.485-0.812s2.196 0.271 3.438 0.812c1.273 0.509 2.276 1.13 3.008 1.862l2.769-2.865v7.257z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item sidebar-toggle-btn">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-4"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M1.25 0.833h27.5v3.079h-27.5v-3.079zM1.25 11.504v-3.008h27.5v3.008h-27.5zM1.25 19.167v-3.079h27.5v3.079h-27.5z"
+							></path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- mbl nav bar end -->
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+		<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/chart.js/chart.min.js"></script>
+		<script src="assets/vendor/echarts/echarts.min.js"></script>
+		<script src="assets/vendor/quill/quill.min.js"></script>
+		<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+		<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			const data = {
+				labels: ['Jan 15', 'Jan 16', 'Jan 17', 'Jan 18', 'Jan 19', 'Jan 20', 'Jan 21'],
+				datasets: [
+					{
+						data: [12, 6, 9, 12, 3, 9, 2],
+						backgroundColor: [
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+						],
+
+						borderRadius: 2,
+						borderSkipped: false,
+						barPercentage: 0.5,
+						categoryPercentage: 0.5,
+					},
+				],
+			};
+
+			// config
+			const config = {
+				type: 'bar',
+				data,
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true,
+							grid: {
+								borderColor: 'green',
+								borderWidth: '3',
+								drawBorder: false,
+								drawOnChartArea: false,
+							},
+						},
+						x: {
+							grid: {
+								drawBorder: false,
+								display: true,
+								lineWidth: 5,
+								drawOnChartArea: false,
+							},
+						},
+					},
+					plugins: {
+						tooltip: {
+							yAlign: 'bottom',
+						},
+						legend: {
+							display: false,
+						},
+					},
+				},
+			};
+			// render init block
+			const myChart = new Chart(document.getElementById('myChart'), config);
+		</script>
+	</body>
+</html>

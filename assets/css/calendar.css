@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nuosu+SIL&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ==================== */
+/* base */
+/* ==================== */
+
+:root {
+	scroll-behavior: smooth;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-gray: #9a9ea7;
+	--color-primary: #4154f1;
+	--color-secondary: #717ff5;
+	--color-tirtiary: #7963f0;
+}
+
+/* ==================== */
+/* calendar */
+/* ==================== */
+
+.auction-calendar-page .sidebar {
+	height: 135%;
+}
+
+.Profile {
+	margin-left: 1rem !important;
+}
+
+.calendar {
+	border: 1px solid #e4e6e8;
+	border-radius: 1.4rem;
+}
+.calendar-header {
+	padding: 2.8rem 2.3rem;
+}
+.calendar-header-left {
+	gap: 2rem;
+}
+
+.calendar .btn-swith-months {
+	background-color: #f5f6f7;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 1rem;
+	padding: 0;
+}
+.calendar .month-name {
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 2.7rem;
+	color: #0d0a19;
+}
+.calendar-header-right {
+	gap: 0.5rem;
+}
+.calendar .btn {
+	background: #f5f6f7;
+	border-radius: 1rem;
+}
+.calendar .btn-switch-calendar {
+	gap: 0.8rem;
+}
+
+/* calendar item */
+.calendar .btn-list {
+	background-color: transparent !important;
+}
+.PinkColor {
+	background: #7963f0;
+	border-radius: 10px;
+	color: #fff;
+	padding: 7px 17px !important;
+}
+.PinkColor:hover {
+	background: #7963f0;
+	border-radius: 10px;
+	padding: 7px 17px !important;
+	color: #fff;
+}
+/* table .first-col {
+	max-width: 12rem;
+} */
+
+.auction-calendar-page .table-list .btn,
+.auction2 .table-list .btn,
+.pagination-btn .btn,
+.auction-calendar-page .pagination .btn {
+	background-color: transparent;
+	padding: 0;
+	margin-right: 1rem;
+}
+.calendar .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+
+.arrow-btns {
+	margin-right: 1rem;
+}
+
+.arrow-btns .btn {
+	padding: 0;
+}
+.calendar-item {
+	gap: 2rem;
+}
+
+.btn-dots {
+	padding: 1rem !important;
+	margin-left: 1rem;
+	background: #f5f6f7 !important;
+}
+
+.calendar-title {
+	color: #0d0a19;
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+.calendar-status {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.calendar-list {
+	padding: 1rem 0;
+}
+.calendar-item {
+	padding: 1rem 0;
+	border-bottom: 1px solid #e4e6e8;
+}
+
+/* pagination */
+
+.pagination {
+	padding: 3rem 2.5rem;
+	gap: 3rem;
+}
+.pagination .btn {
+	border: 1px solid #e4e6e8;
+	border-radius: 0.6rem;
+	height: 4rem;
+	width: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+.pagination .btn.active {
+	background-color: #7963f0;
+	color: var(--color-white);
+}
+
+/* ==================== */
+/* auction2 css */
+/* ==================== */
+
+.auction2-page .calendar {
+	border: none !important;
+}
+.auction2 .form {
+	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	border-radius: 8px;
+}
+.auction2 .form .btn {
+	height: 3.6rem;
+	width: 3.6rem;
+	background-color: var(--color-tirtiary);
+}
+.auction2 .form .input,
+.auction2 .form .input::placeholder {
+	color: #0d0a19;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.auction2 .form .btn .icon {
+	height: 1rem;
+	fill: var(--color-white);
+}
+
+.aution2-filter .filter-btns {
+	gap: 2rem;
+}
+.aution2-filter .btn {
+	color: var(--color-gray);
+	border-radius: 0.8rem;
+}
+.aution2-filter .btn.active {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), #7963f0;
+	color: var(--color-tirtiary);
+}
+
+.auction2-page .btn-prev-pagination,
+.auction2-page .btn-next-pagination {
+	height: auto;
+	width: auto;
+	background: #ffffff;
+	border: 1px solid #e4e6e8 !important;
+	border-radius: 6px !important;
+}
+.auction2-page .pagination .btn,
+.auction2-page .pagination .btn {
+	border: none;
+	background-color: #fff;
+}
+.auction2-page .pagination .btn.active,
+.auction2-page .pagination .btn.active {
+	border: none;
+	background-color: var(--color-tirtiary);
+}
+
+/* auction list */
+.auction2-item {
+	margin-bottom: 4rem;
+}
+.auction2-item .img {
+	width: 100%;
+	height: 38rem;
+	border-radius: 0.8rem;
+}
+.auction2-item .img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.8rem;
+}
+.auction2-item .btn-info {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background-color: #f5f6f7;
+	padding: 1.1rem !important;
+}
+.auction2-item {
+	margin-bottom: 4rem;
+}
+
+/* ==================== */
+/* auction err css */
+/* ==================== */
+
+.auction-err-body {
+	height: 75vh;
+}
+
+/* ==================== */
+/* auction err css */
+/* ==================== */
+.table-list {
+	/* padding: 0 2rem; */
+}
+.table-item {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	justify-content: start;
+	align-items: center;
+	gap: 0 0.6rem;
+	padding: 1.6rem 2.4rem;
+	font-size: 1.2rem;
+}
+.table-head {
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 10px;
+}
+.table-head .btn {
+	background: transparent;
+	padding: 0 !important;
+}
+.table-head .arrow-btns .btn {
+	height: 1rem;
+	width: auto;
+	position: relative;
+}
+.table-head .arrow-btns .btn .icon {
+	height: 1.4rem;
+	width: 1.4rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.first-col {
+	grid-column: 1/3;
+}
+
+.auction2-page .table-item {
+	grid-template-columns: repeat(10, 1fr);
+	align-items: start;
+	gap: 0 1rem;
+}
+
+.btn-pagination {
+	margin-left: 5px;
+}
+
+.calenderSell {
+	margin-bottom: -315px !important;
+}
+.nextText {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.1px;
+	color: #9a9ea7;
+}

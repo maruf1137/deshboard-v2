@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="assets/css/notification.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="dashboard-page ">
+
+  <!-- ======= sidebar ======= -->
+
+  <aside id="sidebar" class="sidebar position-absolute">
+    <button class="btn-close-sidebar">
+      <svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg>
+    </button>
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+         <img class="mb-3 ms-3" src="assets/img/logo.png" alt="">
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+         <img src="assets/img/dash2.png" alt="">
+          <span class="dashBoard">Dashboard</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-heading">Auction</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i><img src="assets/img/2.png" alt=""></i><span>Auctions</span>
+        </a>
+     
+      </li>
+      <!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i><img src="assets/img/3.png" alt=""></i><span>Calender</span>
+        </a>
+      </li>
+      <!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i><img src="assets/img/4.png" alt=""></i><span>Active Bids</span>
+        </a>
+      </li>
+      <!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i><img src="assets/img/5.png" alt=""></i><span>Saved</span>
+        </a>
+      </li><!-- End Icons Nav -->
+
+      <li class="nav-heading">Vehicle finder</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i><img src="assets/img/6.png" alt=""></i>
+          <span>Search </span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i><img src="assets/img/8.png" alt=""></i>
+          <span>Listings</span>
+        </a>
+      </li><!-- End Listing Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i><img src="assets/img/9.png" alt=""></i>
+          <span>Book Service</span>
+        </a>
+      </li><!-- End Book Service Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i><img src="assets/img/10.png" alt=""></i>
+          <span>Help Center</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+    </ul>
+
+    <div class="sell-car-box historySidebar ">
+      <p class="text">A new way to buy modern and sell old cars</p>
+      <a href="#" class="btn btn-sell-car d-flex ">
+        <svg class="icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
+        <span>sell your car</span>
+      </a>
+    </div>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle d-flex">
+      <div>
+        <h2 class="profileSetting">Profile Settings</h2>
+      </div>
+          
+      <div class="d-flex ms-auto">
+        <div class="notification me-2">
+          <img src="assets/img/11.png" alt="">
+        </div>
+        <div class="Profile">
+          <img src="assets/img/profile-img.jpg" alt="">
+        </div>
+      </div>
+    </div><!-- End Page Title -->
+
+    <div class="dashBoardImages">
+      <div class="SomePadding">
+        <div class="d-flex mt-3">
+          <div class="carIcon me-4 mt-1 ">
+            <a href="#"><img src="assets/img/arrow.png" alt=""></a>
+          </div>
+          <div class="mb-3">
+            <h3  class="notifi">Notifications</h3>
+            <span class="email">Set your email notifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="container mt-5">
+          <p class="product">Product updates</p>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="d-flex justify-content-md-between  me-5">
+                  <h5 class="MessageRe">Receive massage from our platfrom</h5>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" checked>
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <hr class="hr-control" >
+                <p class="product">Remainders</small>
+                <div class="d-flex justify-content-md-between  me-5">
+                  <h5 class="MessageReColor">Receive booking Remainders,pricing notices</h5>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <hr class="hr-control" >
+                <p class="product">Promotions and tips</p>
+                <div class="d-flex justify-content-md-between  me-5">
+                  <h5 class="MessageRe">Receive coupons,promotions,surveys</h5>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" checked>
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <hr class="hr-control" >
+                <p class="product">Policy and community</p>
+                <div class="d-flex justify-content-md-between  me-5">
+                  <h5 class="MessageRe">Receive updates on home sharing regulations</h5>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" checked>
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <hr class="hr-control" >
+                <p class="product">Account support</p>
+                <div class="d-flex justify-content-md-between  me-5">
+                  <h5 class="MessageReColor">Receive massages about your account,your tripps,legal alerts</h5>
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <hr class="hr-control" >
+                <br>
+                <div class=" mt-5 mb-5">
+                  <button type="button" class="btn btn-lg  updatingSetting">Updates settings</button>
+                  <button type="button" class="btn cancelBTN ms-1">Cancel</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="profile-notification">
+                    <a href="#"><img src="assets/img/notification.png" alt=""></a>
+                    <h3 class="Alerts">Updates and alerts</h3>
+                    <p class="AlertMessage">
+                    Advertising is telling the world how great you are, while publicity is having tell the world how great you are.
+                    </p>
+                  </div>
+              </div>
+            </div>
+      </section>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="mt-5">
+
+
+    <!-- Copyright -->
+    <div class="FooterTextArea">
+      <div class="TermText"> 
+        <p> <a href="" class="Privacy">Privacy Policy </a> <a href="" class="Term">Term of Use</a> <span class="reserved"> © 2021 All rights reserved</span></p>
+      </div>
+      
+      <div class="ms-auto">
+          <img src="assets/img/Language.png" alt="">
+           <img src="assets/img/Currency.png" alt="" class="ms-2">
+      </div>
+     </div>
+        <!-- Copyright -->
+  <!-- Footer -->
+
+</div>
+
+
+  </main><!-- End #main -->
+
+  <!-- overlay -->
+  <div class="overlay"></div>
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

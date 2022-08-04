@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="assets/css/history.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="dashboard-page ">
+
+  <!-- ======= sidebar ======= -->
+
+  <aside id="sidebar" class="sidebar position-absolute">
+    <button class="btn-close-sidebar">
+      <svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg>
+    </button>
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+         <img class="mb-3 ms-3" src="assets/img/logo.png" alt="">
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+         <img src="assets/img/dash2.png" alt="">
+          <span class="dashBoard">Dashboard</span>
+        </a>
+      </li>
+      <!-- End Dashboard Nav -->
+
+      <li class="nav-heading">Auction</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="auction2.html">
+          <i><img src="assets/img/2.png" alt=""></i><span>Auctions</span>
+        </a>
+     
+      </li>
+      <!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed"  href="auction-calendar.html">
+          <i><img src="assets/img/3.png" alt=""></i><span>Calender</span>
+        </a>
+      </li>
+      <!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i><img src="assets/img/4.png" alt=""></i><span>Active Bids</span>
+        </a>
+      </li>
+      <!-- End Tables Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+          <i><img src="assets/img/5.png" alt=""></i><span>Saved</span>
+        </a>
+      </li><!-- End Icons Nav -->
+
+      <li class="nav-heading">Vehicle finder</li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="history.html">
+          <i><img src="assets/img/search2.png" alt=""></i>
+          <span>Search </span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i><img src="assets/img/8.png" alt=""></i>
+          <span>Listings</span>
+        </a>
+      </li><!-- End Listing Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <i><img src="assets/img/9.png" alt=""></i>
+          <span>Book Service</span>
+        </a>
+      </li><!-- End Book Service Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="help-center-2.html">
+          <i><img src="assets/img/10.png" alt=""></i>
+          <span>Help Center</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+    </ul>
+
+    <div class="sell-car-box historySidebar ">
+      <p class="text">A new way to buy modern and sell old cars</p>
+      <a href="#" class="btn btn-sell-car d-flex ">
+        <svg class="icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
+        <span>sell your car</span>
+      </a>
+    </div>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+    <div class="pagetitle d-flex">
+      <div>
+        <h2 class="TopHeading2">2021 BMW 228 Gran Coupe</h2>
+      </div>
+      
+      <div class="d-flex ms-auto">
+        <div class="notification me-2">
+          <img src="assets/img/11.png" alt="">
+        </div>
+        <div class="Profile">
+          <img src="assets/img/profile-img.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- End Page Title -->
+
+    
+    <!-- heading start -->
+     
+     <section>
+            <div class="row d-flex ">
+                <div class="col-md-8 car-head">
+                    <img src="assets/car-image/carhead1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4 SmallImgHidden">
+                    <div class="carheads1 mb-5">
+                        <img src="assets/car-image/carhead2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="carheads2">
+                        <img src="assets/car-image/carhead3.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+     </section>
+
+ <!-- search suggetion  -->
+  <section class="mt-5 ">
+    <section>
+        <div class="row d-flex ">
+            <div class="col-md-8 ms-auto  ">
+               <h4 class="BMW2">What is the 2021 BMW 2 Series?</h4>
+               <p class="BMW2P">The coupe and convertible come in 230i and M240i form. The 230i is powered by a 248-horsepower, turbocharged 2.0-liter four-cylinder engine, while the M240i gets a 335-hp, turbocharged 3.0-liter inline-six. Both versions are offered with rear- or all-wheel drive and an eight-speed automatic or six-speed manual transmission. 
+                <br> <br>
+              The Gran Coupe is powered by a turbocharged 2.0-liter four-cylinder that makes 228 hp in the 228i and 301 hp in the M235i. The Gran Coupe has standard all-wheel drive and an eight-speed automatic transmission. </p>
+
+               <div class="d-flex justify-content-md-between me-5 mt-5">
+                    <p class="Alltype">Fuel type</p>
+                    <h3  class="ms-auto msText">Gasolin</h3>
+              </div>
+              <hr class="hr-control" >
+              <div class="d-flex justify-content-md-between  me-5">
+                <p class="Alltype">City MPG</p>
+                <h3  class="ms-auto msText">23</h3>
+              </div>
+              <hr class="hr-control" >
+              <div class="d-flex justify-content-md-between  me-5">
+                <p class="Alltype">Drive train </p>
+                <h3  class="ms-auto msText">AWD</h3>
+              </div>
+              <hr class="hr-control" >
+              <div class="d-flex justify-content-md-between  me-5">
+                <p class="Alltype">Engine</p>
+                <h3  class="ms-auto msText">2.OLI416V GDI DOHC Turbo</h3>
+              </div>
+              <hr class="hr-control" >
+              <div class="d-flex justify-content-md-between  me-5">
+                <p class="Alltype">Exterior Color</p>
+                <h3  class="ms-auto msText">Jet Black</h3>
+              </div>
+              <hr class="hr-control" >
+              <div class="d-flex justify-content-md-between  me-5">
+                <p class="Alltype">Interior Color</p>
+                <h3  class="ms-auto msText">Black</h3>
+              </div>
+              <hr class="hr-control" >
+              <div class="d-flex justify-content-md-between  me-5">
+                <p class="Alltype">Transmission</p>
+                <h3  class="ms-auto msText">8-Speed Automatic</h3>
+              </div>
+              <hr class="hr-control" >
+
+               <!-- feature start-->
+               <div class="d-flex justify-content-md-between  me-5 mt-5">
+                    <div >
+                      <h3 class="Standard">Standard Features include:</h3>
+                      <p class="StandardP">17-inch wheels</p>
+                      <p class="StandardP"> LED headlights</p>
+                      <p class="StandardP">Rain-sensing windshield wipers</p>
+                      <p class="StandardP">Push-button start</p>
+                      <p class="StandardP">Forward collision warning</p>
+                      <p class="StandardP">Lane deparature </p>
+                      <p class="StandardP">Front and rear parking sensors</p>
+                    </div>
+                    <div >
+                      <h3 class="Standard">available Features include:</h3>
+                      <p class="StandardP">Keyless access</p>
+                      <p class="StandardP"> Power moonroof</p>
+                      <p class="StandardP">Heated front seats</p>
+                      <p class="StandardP">Heated steering wheel</p>
+                      <p class="StandardP">Wireless device charging</p>
+                      <p class="StandardP">Harman kardon stereo</p>
+                    </div>
+                    <br>
+                    <br>
+              </div class="mt-5">
+              
+          </div>
+            <div class="col-md-4  ">
+                <h2 class="Money">$35,700-$37,500</h2>
+                <p style="color:#9A9EA7; ">MSRP</p><br>
+                <p style="color:#9A9EA7; ">Seller</p>
+                <div class="d-flex mt-3">
+                  <div class="carIcon me-3 ">
+                    <img src="assets/img/icon2.png" alt="">
+                  </div>
+                  <div>
+                    <h3 class="profile">BMW Dealer Liana <span><img src="assets/img/verified.png" alt=""></span></h3>
+                    <span class="Roobchester">Roobchester,TN 30071-8345</span>
+                   
+                  </div>
+                </div>
+                    <div class="mt-3">
+                      <p style="color:#9A9EA7;">My new car is sexy. Melbourne Red color, interior is nice. I enjoy changing the ambiance light to the color of my choice.</p>
+                    </div>
+
+                    <!-- feature start here  -->
+                    <div class="mt-5">
+                        <p style="color:#9A9EA7;">Features</p>
+                        <div >
+                                <div class="feature-style ">
+                                    <img src="assets/img/zep.png" alt="">
+                                    <h3 class="mt-3 Sedan">Sedan</h3>
+                                </div>
+                                <div class="feature-style mt-3 ">
+                                  <img src="assets/img/seat.png" alt="">
+                                  <h3 class="mt-3 Sedan">5-seats</h3>
+                              </div>
+                              <div class="feature-style mt-3">
+                                <img src="assets/img/pamp.png" alt="">
+                                <h3 class="mt-3 Sedan">27-28 Mpg</h3>
+                            </div>
+                             <!-- warenty section  start-->
+                            <section class="mt-5">
+                              <span style="color:#9A9EA7;">warenty</span>
+                              <h3 class="mt-4 Maximum">Maximum Age/Mileage</h3>
+                              <p class="Maximump">Certified pre-Owned Elite with less than 15,00 miles. Certified pre-owned with less than 60,000 miles.</p>
+
+                              <h3 class="mt-5 Maximum">Basic Warranty Terms</h3>
+
+                              <p class="Maximump">1 year/unlimited miles expiration of 4-year/50,000 miles new car warranty.</p>
+
+                              <a href="#" class="ChangeColor">View All Warranty Program Details</a>
+
+                              <div class="mt-5 ">
+                                <button type="button" class="btn p-3 inventoryButton">View local inventory</button>
+                              </div>
+                            </section>
+                                
+                        </div>
+                    </div>
+            </div>
+        </div>
+ </section>
+     
+         
+        
+
+  <!-- reviews section  start-->
+      <section class="mt-5 ">
+        <h1 class="Reviews">Reviews</h1>
+            <div class="row ">
+              <div class="col-md-8 reviews-section mt-5">
+                <div class="row p-5">
+                  <div class="col-md-4 star-control">
+                      <div class="d-flex StarImg">
+                        <img src="assets/img/star2.png" alt="" >
+                        <h1 class="rating-style">4.96</h1>
+                      </div>
+                      <p style="color:#9A9EA7; ">Based on 235 reviews</p>
+
+                      <button class="reviwes-btn"> <img src="assets/img/mess.png" alt="">  <span class="SomeLeft">all reviews</span></button>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                          <h3 class="Positive">Positive</h3>
+                          <p class="PositiveP">4 star and above</p>
+                        </div>
+                        <div>
+                          <h3 class="BorderStyle">80%</h3>
+              
+                        </div>
+                    </div>
+                          <div>
+                            <h1 class="Positive">The Good</h1>
+                            <p class="PositiveP">Snug cabin still accommodates taller people <br> Excelent hadling and balance two door <br>
+                            Ride quality(gran coupe) <br>
+                            Display quality (Gran coupe)</p>
+                          </div>
+                          <div>
+                            <h1 class="Positive">The Bad</h1>
+                            <p class="PositiveP">Snug cabin still accommodates taller peoplw Excelent hadling and balance two door <br>
+                            Ride quality(gran coupe) <br>
+                           Display quality (Gran coupe)</p>
+                          </div>
+                  </div>
+
+            </div>
+              </div>
+              <div class="col-md-4">
+
+              </div>
+            </div>
+      </section>
+    
+        <section class=" row mt-5">
+          <h1 class="competitors">Compare the competitors</h1>
+          <div class="col-md-8  flex-sm-column">
+            <!-- car list  1-->
+                <div class="mb-5 ">
+                  <div class="CarList2 row   ">
+                    <div class="carImage2 col-md-4 ">
+                      <img src="assets/car-image/car2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="carDetails col-md-8">
+                      <div class="d-flex mt-3 ">
+                        <div>
+                          <h3 class="UsedHeading">Used 2015 Audi S4 Premium Plus</h3>
+                           <p class="usedP">11 475 Miles </p>
+                        </div>
+                      </div>           
+                        <div class="car-info2">
+                          <p class="usedP">Blue</p>
+                          <li class="usedP">23 city/17 Highway</li>
+                          <li class="usedP">AWD</li>
+                          <li class="usedP">4-Cylinder Turbo</li>
+                        </div>
+                        <div class="d-flex mt-3">
+                          <div class="col-md-6">
+                            <h3 class="UsedHeading">$41,400</h3>
+                          </div>
+                        
+                        </div>
+                    </div>
+                  </div>      
+                </div> 
+                <hr class="hr-control">
+                 <!-- car list  2-->
+                 <div class="mb-5 ">
+                  <div class="CarList2 row   ">
+                    <div class="carImage2 col-md-4 ">
+                      <img src="assets/car-image/car.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="carDetails col-md-8">
+                      <div class="d-flex mt-3 ">
+                        <div>
+                          <h3 class="UsedHeading">2013 Suburu Forester Premium Plus</h3>
+                        <p class="usedP">40 475 Miles away</p>
+                        </div>
+                      </div>           
+                        <div class="car-info2">
+                          <p style="color:#9A9EA7; ">White</p>
+                          <li>13 city/7 Highway</li>
+                          <li>AWD</li>
+                          <li>4-Cylinder Turbo</li>
+                        </div>
+                        <div class="d-flex mt-3">
+                          <div class="col-md-6">
+                            <h3 class="UsedHeading">$21,480</h3>
+                          </div>
+                        
+                        </div>
+                    </div>
+                  </div>      
+                </div> 
+                <hr class="hr-control">
+                 <!-- car list  3-->
+                 <div class="mb-5 ">
+                  <div class="CarList2 row   ">
+                    <div class="carImage2 col-md-4 ">
+                      <img src="assets/car-image/car6.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="carDetails col-md-8">
+                      <div class="d-flex mt-3 ">
+                        <div>
+                          <h3 class="UsedHeading">Used 2010 BMW X3 Sport Package</h3>
+                        <p class="usedP">20 850 Miles </p>
+                        </div>
+                    
+                      </div>           
+                        <div class="car-info2">
+                          <p style="color:#9A9EA7; ">Black</p>
+                          <li>23 city/17 Highway</li>
+                          <li>RWD</li>
+                          <li>4-Cylinder </li>
+                        </div>
+                        <div class="d-flex mt-3">
+                          <div class="col-md-6">
+                            <h3 class="UsedHeading">$36,800</h3>
+                          </div>
+                        
+                        </div>
+                    </div>
+                  </div>      
+                </div> 
+         
+        </div> 
+
+        </section>
+
+
+        <div class="mt-5">
+
+          <!-- Footer -->
+          <footer class="text-center text-lg-start text-white FooterArea" >
+        
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold About">About</h6>
+                    <p>
+                      <a href=""> How it works</a>
+                    </p>
+                    <p>
+                      <a href="">Careers</a>
+                    </p>
+                    <p>
+                      <a href="">About us</a>
+                    </p>
+                   
+                    <p>
+                      <a href="">Media</a>
+                    </p>
+                  </div>
+        
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold About">Community</h6>
+                    <p>
+                      <a href="">Against Discrimination</a>
+                    </p>
+                    <p>
+                      <a href="">Invite friends</a>
+                    </p>
+                    <p>
+                      <a href="">Gift cards</a>
+                    </p>
+        
+                  </div>
+        
+                  <!-- Grid column -->
+        
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold About">Become seller</h6>
+                    <p>
+                      <a href="">Add your vehicle</a>
+                    </p>
+                    <p>
+                      <a href="">Business account</a>
+                    </p>
+                    <p>
+                      <a href="">Community</a>
+                    </p>
+                   
+                    <p>
+                      <a href="">Media</a>
+                    </p>
+                  </div>
+        
+                  <!-- Grid column -->
+              
+                
+                 
+                  
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold About">Bookings support</h6>
+                    <p>
+                      <a href="">Updates for COVID-19</a>
+                    </p>
+                    <p>
+                      <a href="">Help Center</a>
+                    </p>
+                    <p>
+                      <a href="">Support</a>
+                    </p>
+                   
+                    <p>
+                      <a href="">Trust & Safety</a>
+                    </p>
+                  </div>
+        
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+          </footer>
+            <!-- Copyright -->
+            <div class="FooterTextArea">
+              <div class="TermText"> 
+                <p> <a href="" class="Privacy">Privacy Policy </a> <a href="" class="Term">Term of Use</a> <span class="reserved"> © 2021 All rights reserved</span></p>
+              </div>
+              
+              <div class="ms-auto">
+                  <img src="assets/img/Language.png" alt="">
+                   <img src="assets/img/Currency.png" alt="" class="ms-2">
+              </div>
+             </div>
+                <!-- Copyright -->
+          <!-- Footer -->
+        
+        </div>
+ 
+  </main><!-- End #main -->
+
+  <!-- overlay -->
+  <div class="overlay"></div>
+  <!-- mbl nav bar start -->
+  <nav class="mblNav">
+
+        <h3 class="InvestMoney">$35,700 — $37,700</h3>
+        <p class="InvestMoneyP">MSRP</p>
+        <button type="button" class="btn p-3 inventoryButton">View local inventory</button>
+ 
+  </nav>
+    <!-- mbl nav bar end -->
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
