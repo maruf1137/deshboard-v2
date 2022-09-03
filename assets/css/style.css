@@ -1577,3 +1577,98 @@
 	width: 5px;
 	display: block !important;
 }
+
+/* ============================= */
+/* skeleton loading */
+/* ============================= */
+
+.loading {
+	background-color: #c1c1c1;
+	position: relative;
+	overflow: hidden;
+	min-height: 30px;
+	/* width: 100%; */
+}
+
+.loading::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, transparent, #dedede, transparent);
+	transform: translateX(-100%);
+	animation: loading 2s infinite;
+}
+
+@keyframes loading {
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.dashBoardImages.loading {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), #7963f0;
+	/* background-image: url('../img/header-bg-2.jpg'); */
+	/* width: 100%; */
+	/* height: 100%; */
+}
+.dashBoardImages {
+	/* background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), #7963f0; */
+	background-image: url('../img/header-bg-2.jpg');
+}
+
+.dashBoardImages .loading {
+	background-color: #fff;
+}
+
+.dashBoardImages h1,
+.card-title {
+	min-height: 30px;
+	max-width: 55rem;
+}
+.dashBoardImages h2 {
+	min-height: 10px;
+	max-width: 45rem;
+}
+.dashBoardImages p {
+	min-height: 10px;
+	max-width: 50rem;
+}
+.dashBoardImages button {
+	min-height: 10px;
+	max-width: 40rem;
+}
+
+.section .loading {
+	background-color: #c1c1c1;
+}
+
+.card-title.loading,
+.filter.loading {
+	min-height: 20px;
+	width: 15rem;
+	/* background-color: #c1c1c1; */
+}
+
+.AuctionsP,
+.DateSection .AuctionsP {
+	width: 25rem;
+}
+
+.card.loading {
+	min-height: 265px;
+}
+.card.loading .card-body,
+.CarBoxes .loading .CarBox,
+.DateSection .loading .filterd {
+	opacity: 0;
+}
+
+.CarBoxes {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}

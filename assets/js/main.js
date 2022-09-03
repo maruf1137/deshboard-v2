@@ -128,18 +128,6 @@
 		carDetailsList.insertAdjacentHTML('afterbegin', markup);
 	}
 
-	// index2 car details data end
-
-	const sidebar = document.querySelector('.sidebar');
-	const body = document.querySelector('body');
-	// let bodyHeight = 0;
-	const events = ['load', 'resize'];
-	for (let i = 0; i < events.length; i++) {
-		window.addEventListener(events[i], () => {
-			sidebar.style.minHeight = `${body.offsetHeight - 20}px`;
-		});
-	}
-
 	// sidebar height end
 
 	const select = (el, all = false) => {

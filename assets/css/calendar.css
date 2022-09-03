@@ -18,6 +18,14 @@
 /* calendar */
 /* ==================== */
 
+.auction-calendar-page-2 {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+.auction-calendar-page-2 #main {
+	grid-column: 1/-1;
+}
+
 .auction-calendar-page .sidebar {
 	height: 135%;
 }
@@ -247,9 +255,6 @@
 	height: 75vh;
 }
 
-/* ==================== */
-/* auction err css */
-/* ==================== */
 .table-list {
 	/* padding: 0 2rem; */
 }
@@ -309,4 +314,97 @@
 	line-height: 21px;
 	letter-spacing: -0.1px;
 	color: #9a9ea7;
+}
+
+/* ==================== */
+/* auction-calendar-2 css */
+/* ==================== */
+.auction-calendar-page-2 .calendar-header {
+	padding: 0;
+}
+
+.auction-calendar-page-2 .calendar-header .btn {
+	background: #f5f6f7;
+	border-radius: 1rem;
+	padding: 1.1rem;
+}
+
+.auction-calendar-page-2 .calendar-header .btn-active {
+	background-color: #7963f0;
+	color: var(--color-white);
+}
+.auction-calendar-page-2 .calendar-header .btn-active path {
+	fill: var(--color-white);
+}
+
+.auction-calendar-page-2 .calendar-header .btn .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+
+.auction-calendar-page-2 .table-list {
+	border-radius: 0 0 1.4rem 1.4rem;
+}
+
+.auction-calendar-page-2 .table-item {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	justify-content: end;
+	align-items: stretch;
+	gap: 0;
+	padding: 0;
+	font-size: 1.2rem;
+}
+
+.auction-calendar-page-2 .table-head {
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 0;
+	background: #f5f6f7;
+	/* border: 1px solid #e4e6e8; */
+	border-radius: 1.4rem 1.4rem 0 0;
+}
+
+.auction-calendar-page-2 .table-list .day-name {
+	border-right: 1px solid #ede8e9;
+}
+
+.auction-calendar-page-2 .table-list .day-name,
+.auction-calendar-page-2 .table-list .date {
+	padding: 1.6rem 2.4rem;
+	text-align: end;
+}
+
+.auction-calendar-page-2 .table-list .date:not(:last-child) {
+	border-right: 1px solid #ede8e9;
+}
+
+.auction-calendar-page-2 .table-item:not(:last-child) .date {
+	border-bottom: 1px solid #ede8e9;
+	/* border-right: 1px solid #ede8e9; */
+}
+
+.auction-calendar-page-2 .table-list .table-item .btn {
+	background: #f5f6f7;
+	border-radius: 8px;
+	padding: 0.5rem;
+	margin-right: 0;
+}
+.auction-calendar-page-2 .table-list .table-item .btn-dots {
+	padding: 0 !important;
+	background-color: transparent !important;
+	font-weight: 900;
+}
+
+.auction-calendar-page-2 .table-list .date.d-flex {
+	gap: 0.5rem;
+}
+.auction-calendar-page-2 .table-list .date span,
+.auction-calendar-page-2 .table-list .date {
+	font-weight: 600;
+}
+
+.bg-yellow,
+.bg-yellow:hover {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), #ef8354 !important;
+	color: #ef8354;
 }

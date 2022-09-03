@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+		<title>add vehicle page</title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.gstatic.com" rel="preconnect" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+			rel="stylesheet"
+		/>
+
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/utilities.css" />
+		<link href="assets/css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/add-vehicle.css" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+	</head>
+
+	<body class="add-vehicle-page page">
+		<!-- ======= sidebar ======= -->
+
+		<!-- sidebar start -->
+		<aside id="sidebar" class="sidebar position-absolute">
+			<button class="btn-close-sidebar">
+				<!-- <svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg> -->
+				<svg
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					class="icon"
+				>
+					<path
+						d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"
+					></path>
+				</svg>
+			</button>
+
+			<ul class="sidebar-nav" id="sidebar-nav">
+				<li class="nav-item">
+					<img class="mb-3 ms-3" src="assets/img/logo.png" alt="" />
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon"
+						>
+							<path
+								d="M7.681 24.319c2.338 2.292 5.11 3.438 8.319 3.438s5.958-1.146 8.25-3.438c2.338-2.337 3.506-5.11 3.506-8.319s-1.169-5.958-3.506-8.25c-2.292-2.338-5.042-3.506-8.25-3.506s-5.981 1.169-8.319 3.506c-2.292 2.292-3.438 5.042-3.438 8.25s1.146 5.981 3.438 8.319zM5.619 5.688c2.888-2.888 6.348-4.331 10.381-4.331s7.471 1.444 10.312 4.331c2.888 2.842 4.331 6.279 4.331 10.313s-1.444 7.494-4.331 10.381c-2.842 2.842-6.279 4.262-10.312 4.262s-7.494-1.421-10.381-4.262c-2.842-2.888-4.263-6.348-4.263-10.381s1.421-7.471 4.263-10.313zM19.3 7.956c1.192 0.504 2.154 1.123 2.888 1.856s1.352 1.696 1.856 2.887c0.504 1.192 0.756 2.292 0.756 3.3s-0.252 2.108-0.756 3.3c-0.458 1.192-1.054 2.154-1.787 2.888-1.696 1.742-3.758 2.612-6.188 2.612s-4.515-0.871-6.256-2.612l6.188-6.188v-8.8c1.008 0 2.108 0.252 3.3 0.756z"
+							></path>
+						</svg>
+						<span class="dashBoard">Add vehicle</span>
+					</a>
+				</li>
+				<!-- End Dashboard Nav -->
+			</ul>
+		</aside>
+		<!-- End Sidebar-->
+
+		<main id="main" class="main">
+			<div class="vehicle-header d-block d-lg-none">
+				<div class="content d-flex justify-content-between align-items-center">
+					<button class="btn btn-prev">
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon"
+						>
+							<path
+								d="M15.707 17.293l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414l6 6c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"
+							></path>
+						</svg>
+					</button>
+					<h3>new listing</h3>
+					<button class="btn btn-close"></button>
+				</div>
+				<div class="vehicle-range-line position-relative mb-3">
+					<div class="range-fill"></div>
+				</div>
+
+				<h2>tell us basic features of your car</h2>
+			</div>
+
+			<div class="vehicle row g-5">
+				<div class="col-12 col-lg-6">
+					<div class="vehicle-category">
+						<input type="text" class="vehicle-input vehicle-card mb-3" placeholder="Vin code" />
+						<div class="dropdown d-flex flex-column align-items-start vehicle-card mb-3">
+							<div class="label">year</div>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>2021</option>
+								<option value="2021">2021</option>
+								<option value="2020">2020</option>
+								<option value="2019">2019</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+							</select>
+						</div>
+						<div class="dropdown d-flex flex-column align-items-start vehicle-card mb-3">
+							<div class="label">select make</div>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>BMW</option>
+								<option value="BMW">BMW</option>
+								<option value="Volvo">Volvo</option>
+								<option value="Audi">Audi</option>
+								<option value="Porsche">Porsche</option>
+								<option value="Lexus">Lexus</option>
+								<option value="Lamborghini">Lamborghini</option>
+							</select>
+						</div>
+						<div class="dropdown d-flex flex-column align-items-start vehicle-card mb-3">
+							<div class="label">model</div>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>M5</option>
+								<option value="M5">M5</option>
+								<option value="M8">M8</option>
+								<option value="M3">M3</option>
+							</select>
+						</div>
+						<div class="d-flex align-items-center mb-3">
+							<input type="text" class="vehicle-input vehicle-card mr-1" placeholder="trim" />
+							<input type="text" class="vehicle-input vehicle-card" placeholder="miles" />
+						</div>
+						<div class="d-flex align-items-center mb-3">
+							<div class="dropdown d-flex flex-column align-items-start vehicle-card mr-1">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>body type</option>
+									<option value="4x4">4x4</option>
+									<option value="Coupe">Coupe</option>
+									<option value="Estate">Estate</option>
+									<option value="Hatchback">Hatchback</option>
+									<option value="Saloon">Saloon</option>
+								</select>
+							</div>
+							<div class="dropdown d-flex flex-column align-items-start vehicle-card">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>transmission</option>
+									<option value="Automatic">Automatic</option>
+									<option value="Manual">Manual</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="dropdown d-flex flex-column align-items-start vehicle-card mb-3">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>body color</option>
+									<option value="OXFORDGRUEN II">OXFORDGRUEN II</option>
+									<option value="TOLEDOBLAU">TOLEDOBLAU</option>
+									<option value="GRAUGRUEN">GRAUGRUEN</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-flex mb-3">
+							<div class="dropdown d-flex flex-column align-items-start vehicle-card">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Interior color</option>
+									<option value="B889">B889</option>
+									<option value="3040B">3040B</option>
+									<option value="EL661">EL661</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="d-flex align-items-center mb-3">
+							<div class="dropdown d-flex flex-column align-items-start vehicle-card mr-1">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Drive Train</option>
+									<option value="Train1">Train1</option>
+									<option value="Train2">Train2</option>
+									<option value="Train3">Train3</option>
+								</select>
+							</div>
+							<div class="dropdown d-flex flex-column align-items-start vehicle-card">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Fuel type</option>
+									<option value="Fuel1">Fuel1</option>
+									<option value="Fuel2">Fuel2</option>
+									<option value="Fuel3">Fuel3</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="d-flex align-items-center mb-5">
+							<input type="text" class="vehicle-input vehicle-card mr-1" placeholder="trim" />
+							<input type="text" class="vehicle-input vehicle-card" placeholder="miles" />
+						</div>
+
+						<div
+							class="vehicle-btns d-flex justify-content-between align-items-center d-none d-lg-flex"
+						>
+							<button class="btn btn-back">back</button>
+							<button class="btn btn-next active">next</button>
+						</div>
+						<div class="vehicle-btns d-flex justify-content-between align-items-center d-lg-none">
+							<button class="btn btn-next active w-100">next</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="vehicle-item d-flex flex-column justify-content-between h-100">
+						<button class="btn btn-cencel text-end mb-5">cencel</button>
+
+						<div class="d-flex justify-content-between align-items-start vehicle-item-filters">
+							<div class="type">
+								<div class="label mb-3">Vehicle type</div>
+								<div class="form-check mb-3">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="exampleRadios"
+										id="exampleRadios1"
+										value="option1"
+										checked
+									/>
+									<label class="form-check-label" for="exampleRadios1"> Sedan </label>
+								</div>
+								<div class="form-check mb-3">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="exampleRadios"
+										id="exampleRadios2"
+										value="option2"
+									/>
+									<label class="form-check-label" for="exampleRadios2"> SUV </label>
+								</div>
+								<div class="form-check mb-3">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="exampleRadios"
+										id="exampleRadios3"
+										value="option2"
+									/>
+									<label class="form-check-label" for="exampleRadios3"> Coupe </label>
+								</div>
+								<div class="form-check mb-3">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="exampleRadios"
+										id="exampleRadios4"
+										value="option2"
+									/>
+									<label class="form-check-label" for="exampleRadios4"> Hatchback </label>
+								</div>
+								<div class="form-check mb-3">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="exampleRadios"
+										id="exampleRadios5"
+										value="option2"
+									/>
+									<label class="form-check-label" for="exampleRadios5"> Minivan </label>
+								</div>
+								<div class="form-check mb-3">
+									<input
+										class="form-check-input"
+										type="radio"
+										name="exampleRadios"
+										id="exampleRadios6"
+										value="option2"
+									/>
+									<label class="form-check-label" for="exampleRadios6"> Cabriolet </label>
+								</div>
+							</div>
+							<div class="d-flex flex-column">
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox1"
+										value="option1"
+										checked
+									/>
+									<label class="form-check-label" for="inlineCheckbox1">Seat heater</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox2"
+										value="option2"
+										checked
+									/>
+									<label class="form-check-label" for="inlineCheckbox2">Leather seats</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox3"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox3">Navigation system</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox4"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox4">Air conditioner</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox5"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox5">Parking control</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox6"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox6">Rear view camera</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox7"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox7">Multimedia system</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox8"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox8">Central lock</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox9"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox9">Alloy wheels</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										id="inlineCheckbox10"
+										value="option2"
+									/>
+									<label class="form-check-label" for="inlineCheckbox10"
+										>Additional equipment</label
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="vehicle-gallery">
+							<div class="vehicle-list mb-5">
+								<!-- item comes from add-vehicle.js -->
+							</div>
+
+							<button
+								class="btn btn-upload d-flex justify-content-center align-items-center position-relative"
+							>
+								<img src="assets/img/upload-icon.png" alt="" />
+								<span>upload photos</span>
+								<input type="file" multiple accept="image/*" />
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="vehicle-range-line position-relative d-none d-lg-block">
+					<div class="range-fill"></div>
+				</div>
+			</div>
+		</main>
+		<!-- End main -->
+		<!-- overlay -->
+		<div class="overlay"></div>
+		<!-- mbl nav bar start -->
+		<nav class="mblNav">
+			<ul class="mblNav-list">
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M4.801 15.199c1.461 1.432 3.194 2.148 5.199 2.148s3.724-0.716 5.156-2.148c1.461-1.461 2.192-3.194 2.192-5.199s-0.731-3.724-2.192-5.156c-1.432-1.461-3.151-2.191-5.156-2.191s-3.738 0.73-5.199 2.191c-1.432 1.432-2.148 3.151-2.148 5.156s0.716 3.738 2.148 5.199zM3.512 3.555c1.805-1.805 3.967-2.707 6.488-2.707s4.669 0.902 6.445 2.707c1.805 1.776 2.707 3.924 2.707 6.445s-0.902 4.684-2.707 6.488c-1.776 1.776-3.924 2.664-6.445 2.664s-4.684-0.888-6.488-2.664c-1.776-1.805-2.664-3.967-2.664-6.488s0.888-4.669 2.664-6.445zM12.063 4.973c0.745 0.315 1.346 0.702 1.805 1.16s0.845 1.060 1.16 1.805c0.315 0.745 0.473 1.432 0.473 2.063s-0.158 1.318-0.473 2.063c-0.286 0.745-0.659 1.346-1.117 1.805-1.060 1.088-2.349 1.633-3.867 1.633s-2.822-0.544-3.91-1.633l3.867-3.867v-5.5c0.63 0 1.318 0.158 2.063 0.473z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link active">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-1"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M3.203 7.891l4.688 4.727-2.344 2.344-4.727-4.687 2.383-2.383zM10.273 0.82l4.687 4.727-2.344 2.344-4.727-4.688 2.383-2.383zM4.375 6.719l2.344-2.344 11.797 11.797-2.344 2.344-11.797-11.797zM0.82 17.5h10v1.68h-10v-1.68z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-2"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M10.848 12.848v1.805h-6.445v-1.805h6.445zM15.402 17.402v-10.055h-12.805v10.055h12.805zM15.402 2.75c0.487 0 0.917 0.186 1.289 0.559s0.559 0.802 0.559 1.289v12.805c0 0.487-0.186 0.917-0.559 1.289s-0.802 0.559-1.289 0.559h-12.805c-0.516 0-0.96-0.172-1.332-0.516-0.344-0.372-0.516-0.816-0.516-1.332v-12.805c0-0.487 0.172-0.917 0.516-1.289 0.372-0.372 0.816-0.559 1.332-0.559h0.902v-1.848h1.848v1.848h7.305v-1.848h1.848v1.848h0.902zM13.598 9.152v1.848h-9.195v-1.848h9.195z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-3"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M10.525 5.942v4.297l3.533 2.148-0.716 1.241-4.345-2.626v-5.061h1.528zM19.167 8.090h-6.923l2.817-2.865c-1.4-1.4-3.087-2.101-5.061-2.101-1.942-0.032-3.613 0.637-5.013 2.005-0.573 0.573-1.066 1.353-1.48 2.339-0.414 0.955-0.621 1.83-0.621 2.626s0.207 1.687 0.621 2.674c0.414 0.955 0.907 1.719 1.48 2.292s1.353 1.066 2.339 1.48c0.987 0.414 1.878 0.621 2.674 0.621s1.687-0.207 2.674-0.621c1.019-0.414 1.814-0.907 2.387-1.48 1.369-1.369 2.053-3.024 2.053-4.965h2.053c0 2.515-0.891 4.647-2.674 6.398-1.782 1.782-3.947 2.674-6.493 2.674s-4.711-0.891-6.493-2.674c-1.782-1.751-2.674-3.867-2.674-6.35 0-2.514 0.891-4.663 2.674-6.445 0.732-0.732 1.719-1.353 2.96-1.862 1.273-0.541 2.435-0.812 3.485-0.812s2.196 0.271 3.438 0.812c1.273 0.509 2.276 1.13 3.008 1.862l2.769-2.865v7.257z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item sidebar-toggle-btn">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-4"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M1.25 0.833h27.5v3.079h-27.5v-3.079zM1.25 11.504v-3.008h27.5v3.008h-27.5zM1.25 19.167v-3.079h27.5v3.079h-27.5z"
+							></path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- mbl nav bar end -->
+
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Template Main JS File -->
+		<!-- <script src="assets/js/main.js"></script> -->
+		<script src="assets/js/add-vehicle.js"></script>
+	</body>
+</html>

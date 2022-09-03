@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nuosu+SIL&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Inter', sans-serif !important;
+	text-transform: capitalize;
+	text-decoration: none;
+	list-style-type: none;
+}
+:root {
+	scroll-behavior: smooth;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-primary: #4154f1;
+	--color-secondary: #717ff5;
+	--color-tirtiary: #7963f0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.page {
+	display: grid;
+	grid-template-columns: 25rem 1fr;
+}
+
+.dashBoard {
+	color: #0d0a19;
+	margin-left: 15px;
+}
+#main {
+	transition: all 0.3s;
+	padding: 20px 30px;
+	grid-column: 2/-1;
+	border-left: 1px solid #eeeeee !important;
+}
+
+/* ============================ */
+/* vehicle page */
+/* ============================ */
+
+.vehicle-range-line {
+	width: 100%;
+	height: 6px;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), #7963f0;
+}
+.vehicle-range-line .range-fill {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3%;
+	background: #7963f0;
+	border-radius: 0px 15px 15px 0px;
+}
+
+.vehicle-card {
+	padding: 3rem 2rem;
+	border: 1px solid #eeeeee;
+	border-radius: 8px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.1px;
+	color: #9a9ea7;
+}
+.vehicle .dropdown .form-select {
+	padding: 0 0 2rem 2rem;
+	border: none;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.1px;
+	color: #0d0a19;
+	outline: none;
+	margin-top: 0.3rem;
+	text-transform: uppercase;
+}
+.vehicle .dropdown .form-select option {
+	text-transform: uppercase;
+}
+
+.vehicle .dropdown {
+	padding: 3rem 0 0 0;
+}
+.vehicle .d-flex .dropdown {
+	padding: 0;
+}
+.vehicle .d-flex .dropdown .form-select {
+	padding: 3rem 2rem;
+	color: #9a9ea7;
+	text-transform: capitalize;
+}
+.vehicle .d-flex .dropdown .form-select option {
+	text-transform: capitalize;
+}
+.vehicle .dropdown .label {
+	padding: 0 2rem;
+}
+.vehicle .btn {
+	background-color: #f5f6f7;
+	border-radius: 10px;
+}
+
+.vehicle .btn.active {
+	border: none;
+	background-color: var(--color-tirtiary);
+	color: var(--color-white);
+}
+
+/* vehicle-item */
+
+.btn-cencel {
+	display: block;
+	margin-left: auto;
+}
+
+.vehicle-item-filters {
+	max-width: 45rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.type .label {
+	font-size: 1.4rem;
+	letter-spacing: -0.1px;
+	color: #9a9ea7;
+}
+
+.vehicle-item .form-check-input {
+	background: #f5f6f7;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.vehicle-item .form-check-input:checked {
+	background-color: #a2f3d9;
+	border: none;
+	outline: none;
+}
+
+.vehicle-item .form-check-input:checked ~ label {
+	font-weight: 700;
+	color: #0d0a19;
+}
+.vehicle-item .form-check-input ~ label {
+	cursor: pointer;
+}
+
+.vehicle-item .form-check {
+	margin-bottom: 2rem;
+}
+
+/* vehicle gallery */
+
+.vehicle-gallery {
+	border: 1px dashed #e4e6e8;
+	border-radius: 8px;
+	padding: 2rem;
+}
+.vehicle-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(13rem, 14rem));
+	gap: 1.2rem;
+}
+
+.vehicle-gallery-item {
+	position: relative;
+	height: 13rem;
+	width: 100%;
+	border-radius: 7px;
+}
+.vehicle-gallery-item img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 7px;
+}
+.vehicle-gallery-item .btn {
+	position: absolute;
+	top: 0.7rem;
+	right: 0.7rem;
+	padding: 1.1rem;
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white !important;
+	background-size: 25% !important; */
+}
+
+.btn-close,
+.btn-close:hover {
+	opacity: 1;
+}
+
+.vehicle-item .btn-upload {
+	background-color: #7963f0 !important;
+	border-radius: 10px !important;
+	display: block;
+	margin: 0 auto;
+	gap: 1rem;
+	cursor: pointer;
+}
+.vehicle-item .btn-upload span {
+	color: var(--color-white);
+}
+
+.vehicle-item .btn-upload .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+.vehicle-item .btn-upload input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* ====================== */
+/* vehicle page responsive */
+/* ====================== */
+
+.vehicle-header h2 {
+	font-size: 2.8rem;
+	font-weight: 700;
+}
+.vehicle-header h3 {
+	font-size: 2.2rem;
+	font-weight: 700;
+}
+.vehicle-header .content {
+	padding: 2rem 0;
+}
+.vehicle-header .btn {
+	background-color: #f5f6f7 !important;
+	padding: 0 !important;
+	height: 4rem;
+	width: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.vehicle-header .btn-prev .icon {
+	fill: var(--color-black);
+}

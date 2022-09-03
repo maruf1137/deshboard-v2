@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+		<title></title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.gstatic.com" rel="preconnect" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+			rel="stylesheet"
+		/>
+
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/utilities.css" />
+		<link href="assets/css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/calendar.css" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+	</head>
+
+	<body class="auction-calendar-page auction-calendar-page-2 page">
+		<!-- ======= sidebar ======= -->
+		<!-- sidebar start -->
+		<aside id="sidebar" class="sidebar position-absolute d-block d-lg-none">
+			<button class="btn-close-sidebar">
+				<!-- <svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg> -->
+				<svg
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					class="icon"
+				>
+					<path
+						d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"
+					></path>
+				</svg>
+			</button>
+			<ul class="sidebar-nav" id="sidebar-nav">
+				<li class="nav-item">
+					<img class="mb-3 ms-3" src="assets/img/logo.png" alt="" />
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">
+						<!-- <img src="assets/img/1.png" alt="" /> -->
+						<!-- <svg class="icon icon-Dashboard">
+							<use xlink:href="assets/img/icons.svg#icon-Dashboard"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon"
+						>
+							<path
+								d="M7.681 24.319c2.338 2.292 5.11 3.438 8.319 3.438s5.958-1.146 8.25-3.438c2.338-2.337 3.506-5.11 3.506-8.319s-1.169-5.958-3.506-8.25c-2.292-2.338-5.042-3.506-8.25-3.506s-5.981 1.169-8.319 3.506c-2.292 2.292-3.438 5.042-3.438 8.25s1.146 5.981 3.438 8.319zM5.619 5.688c2.888-2.888 6.348-4.331 10.381-4.331s7.471 1.444 10.312 4.331c2.888 2.842 4.331 6.279 4.331 10.313s-1.444 7.494-4.331 10.381c-2.842 2.842-6.279 4.262-10.312 4.262s-7.494-1.421-10.381-4.262c-2.842-2.888-4.263-6.348-4.263-10.381s1.421-7.471 4.263-10.313zM19.3 7.956c1.192 0.504 2.154 1.123 2.888 1.856s1.352 1.696 1.856 2.887c0.504 1.192 0.756 2.292 0.756 3.3s-0.252 2.108-0.756 3.3c-0.458 1.192-1.054 2.154-1.787 2.888-1.696 1.742-3.758 2.612-6.188 2.612s-4.515-0.871-6.256-2.612l6.188-6.188v-8.8c1.008 0 2.108 0.252 3.3 0.756z"
+							></path>
+						</svg>
+						<span class="dashBoard">Dashboard</span>
+					</a>
+				</li>
+				<!-- End Dashboard Nav -->
+
+				<li class="nav-heading">Auction</li>
+
+				<li class="nav-item">
+					<a href="auction2.html" class="nav-link collapsed active">
+						<!-- <i>
+							<svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Auctions"></use>
+							</svg> </i
+						> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="31"
+							height="32"
+							viewBox="0 0 31 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M5.125 12.625l7.5 7.563-3.75 3.75-7.563-7.5 3.813-3.813zM16.438 1.313l7.5 7.563-3.75 3.75-7.563-7.5 3.813-3.813zM7 10.75l3.75-3.75 18.875 18.875-3.75 3.75-18.875-18.875zM1.313 28h16v2.688h-16v-2.688z"
+							></path>
+						</svg>
+						<span>Auctions</span>
+					</a>
+				</li>
+				<!-- End Components Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="auction-calendar.html">
+						<!-- <i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Calendar"></use></svg></i
+						> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="29"
+							height="32"
+							viewBox="0 0 29 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M17.356 20.556v2.887h-10.313v-2.887h10.313zM24.644 27.844v-16.087h-20.487v16.087h20.487zM24.644 4.4c0.779 0 1.467 0.298 2.063 0.894s0.894 1.283 0.894 2.063v20.487c0 0.779-0.298 1.467-0.894 2.063s-1.283 0.894-2.063 0.894h-20.487c-0.825 0-1.535-0.275-2.131-0.825-0.55-0.596-0.825-1.306-0.825-2.131v-20.487c0-0.779 0.275-1.467 0.825-2.063 0.596-0.596 1.306-0.894 2.131-0.894h1.444v-2.956h2.956v2.956h11.687v-2.956h2.956v2.956h1.444zM21.756 14.644v2.956h-14.713v-2.956h14.713z"
+							></path>
+						</svg>
+						<span>Calender</span>
+					</a>
+				</li>
+				<!-- End Forms Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="#">
+						<!-- <i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Active-Bids"></use></svg></i
+						> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M16.84 9.507v6.875l5.653 3.437-1.146 1.986-6.951-4.201v-8.097h2.444zM30.667 12.944h-11.076l4.507-4.583c-2.241-2.241-4.94-3.361-8.097-3.361-3.107-0.051-5.78 1.019-8.021 3.208-0.917 0.917-1.706 2.164-2.368 3.743-0.662 1.528-0.993 2.928-0.993 4.201s0.331 2.699 0.993 4.278c0.662 1.528 1.451 2.75 2.368 3.667s2.164 1.706 3.743 2.368c1.579 0.662 3.005 0.993 4.278 0.993s2.699-0.331 4.278-0.993c1.63-0.662 2.903-1.451 3.82-2.368 2.19-2.19 3.285-4.838 3.285-7.944h3.285c0 4.023-1.426 7.435-4.278 10.236-2.852 2.852-6.315 4.278-10.389 4.278s-7.537-1.426-10.389-4.278c-2.852-2.801-4.278-6.188-4.278-10.16 0-4.023 1.426-7.461 4.278-10.313 1.171-1.171 2.75-2.164 4.736-2.979 2.037-0.866 3.896-1.299 5.576-1.299s3.514 0.433 5.5 1.299c2.037 0.815 3.641 1.808 4.812 2.979l4.431-4.583v11.611z"
+							></path>
+						</svg>
+
+						<span>Active Bids</span>
+					</a>
+				</li>
+				<!-- End Tables Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="#">
+						<!-- <i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Saved"></use></svg></i
+						> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="25"
+							height="32"
+							viewBox="0 0 25 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M20.618 25.778v-21.16h-16.347v21.16l8.174-3.59 8.174 3.59zM20.618 1.333c0.866 0 1.604 0.331 2.215 0.993 0.662 0.662 0.993 1.426 0.993 2.292v26.049l-11.382-4.889-11.382 4.889v-26.049c0-0.866 0.306-1.63 0.917-2.292 0.662-0.662 1.426-0.993 2.292-0.993h16.347z"
+							></path>
+						</svg>
+						<span>Saved</span>
+					</a>
+				</li>
+				<!-- End Icons Nav -->
+
+				<li class="nav-heading">Vehicle finder</li>
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="history.html">
+						<!-- <i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-S-Search"></use></svg
+						></i> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M7.154 18.154c1.51 1.51 3.343 2.265 5.5 2.265s3.99-0.755 5.5-2.265c1.51-1.51 2.265-3.343 2.265-5.5s-0.755-3.99-2.265-5.5c-1.51-1.51-3.343-2.265-5.5-2.265s-3.99 0.755-5.5 2.265c-1.51 1.51-2.265 3.343-2.265 5.5s0.755 3.99 2.265 5.5zM23.007 20.419l8.573 8.573-2.588 2.588-8.573-8.573v-1.375l-0.485-0.485c-2.049 1.779-4.475 2.669-7.279 2.669-3.127 0-5.797-1.078-8.007-3.235-2.157-2.157-3.235-4.799-3.235-7.926s1.078-5.77 3.235-7.926c2.211-2.211 4.88-3.316 8.007-3.316s5.77 1.105 7.926 3.316c2.157 2.157 3.235 4.799 3.235 7.926 0 1.132-0.27 2.426-0.809 3.882-0.539 1.402-1.159 2.534-1.86 3.397l0.485 0.485h1.375z"
+							></path>
+						</svg>
+						<span>Search </span>
+					</a>
+				</li>
+				<!-- End Profile Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<!-- <i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Listings"></use></svg
+						></i> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M27.382 20.889v-16.271h-22.84v16.271h6.569c0 1.324 0.484 2.47 1.451 3.438s2.113 1.451 3.437 1.451c1.324 0 2.47-0.484 3.438-1.451s1.451-2.113 1.451-3.438h6.493zM27.382 1.333c0.917 0 1.681 0.331 2.292 0.993 0.662 0.611 0.993 1.375 0.993 2.292v22.764c0 0.866-0.331 1.63-0.993 2.292s-1.426 0.993-2.292 0.993h-22.84c-0.917 0-1.681-0.306-2.292-0.917-0.611-0.662-0.917-1.451-0.917-2.368v-22.764c0-0.917 0.306-1.681 0.917-2.292 0.611-0.662 1.375-0.993 2.292-0.993h22.84z"
+							></path>
+						</svg>
+						<span>Listings</span>
+					</a>
+				</li>
+				<!-- End Listing Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<!-- <i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Book-Service"></use></svg
+						></i> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M7.681 24.319c2.338 2.292 5.11 3.438 8.319 3.438s5.958-1.146 8.25-3.438c2.338-2.337 3.506-5.11 3.506-8.319s-1.169-5.958-3.506-8.25c-2.292-2.338-5.042-3.506-8.25-3.506s-5.981 1.169-8.319 3.506c-2.292 2.292-3.438 5.042-3.438 8.25s1.146 5.981 3.438 8.319zM5.619 5.688c2.888-2.888 6.348-4.331 10.381-4.331s7.471 1.444 10.312 4.331c2.888 2.842 4.331 6.279 4.331 10.313s-1.444 7.494-4.331 10.381c-2.842 2.842-6.279 4.262-10.312 4.262s-7.494-1.421-10.381-4.262c-2.842-2.888-4.263-6.348-4.263-10.381s1.421-7.471 4.263-10.313zM10.775 10.844c1.467-1.467 3.208-2.2 5.225-2.2s3.735 0.733 5.156 2.2c1.467 1.421 2.2 3.14 2.2 5.156s-0.733 3.758-2.2 5.225c-1.421 1.421-3.14 2.131-5.156 2.131s-3.758-0.711-5.225-2.131c-1.421-1.467-2.131-3.208-2.131-5.225s0.71-3.735 2.131-5.156z"
+							></path>
+						</svg>
+						<span>Book Service</span>
+					</a>
+				</li>
+				<!-- End Book Service Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="help-center-2.html">
+						<!-- <i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Help-Center"></use></svg
+						></i> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M4.591 4.875c2.333-2.375 5.167-3.563 8.5-3.563s6.167 1.188 8.5 3.563c2.333 2.333 3.5 5.146 3.5 8.438v13.375c0 1.083-0.396 2.021-1.188 2.812s-1.729 1.188-2.813 1.188h-8v-2.688h9.312v-1.312h-5.312v-10.688h5.312v-2.688c0-2.583-0.917-4.771-2.75-6.563-1.792-1.833-3.979-2.75-6.562-2.75s-4.792 0.917-6.625 2.75c-1.792 1.792-2.688 3.979-2.688 6.563v2.688h5.313v10.688h-4c-1.083 0-2.021-0.396-2.813-1.188s-1.188-1.729-1.188-2.812v-9.375c0-3.292 1.167-6.104 3.5-8.438z"
+							></path>
+						</svg>
+						<span>Help Center</span>
+					</a>
+				</li>
+				<!-- End Register Page Nav -->
+			</ul>
+			<div class="sell-car-box">
+				<p class="text">A new way to buy modern and sell old cars</p>
+				<a href="#" class="btn btn-sell-car d-flex">
+					<!-- <svg class="icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg> -->
+					<svg
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						width="30"
+						height="32"
+						viewBox="0 0 30 32"
+						class="icon"
+					>
+						<!-- <title>icon1</title> -->
+						<path
+							fill="#7963f0"
+							d="M10.125 19.954c0 0.221 0.11 0.331 0.331 0.331h16.346v2.846h-16.941c-0.75 0-1.412-0.287-1.985-0.86-0.529-0.574-0.794-1.235-0.794-1.985 0-0.441 0.11-0.882 0.331-1.323l1.919-3.507-5.096-10.721h-2.846v-2.779h4.632c0.882 1.853 1.765 3.728 2.647 5.625 0.221 0.397 0.728 1.456 1.522 3.176 0.794 1.676 1.412 2.978 1.853 3.904h9.927c3.309-6 5.118-9.309 5.426-9.926l2.449 1.39-5.426 9.86c-0.529 0.971-1.346 1.456-2.449 1.456h-10.522l-1.257 2.316-0.066 0.198zM22.037 25.38c0.574-0.574 1.235-0.86 1.985-0.86s1.39 0.287 1.919 0.86c0.574 0.574 0.86 1.235 0.86 1.985s-0.287 1.412-0.86 1.985c-0.529 0.529-1.169 0.794-1.919 0.794s-1.412-0.265-1.985-0.794c-0.574-0.574-0.86-1.235-0.86-1.985s0.287-1.412 0.86-1.985zM7.875 25.38c0.574-0.574 1.235-0.86 1.985-0.86s1.412 0.287 1.985 0.86c0.574 0.574 0.86 1.235 0.86 1.985s-0.287 1.412-0.86 1.985c-0.574 0.529-1.235 0.794-1.985 0.794s-1.412-0.265-1.985-0.794c-0.529-0.574-0.794-1.235-0.794-1.985s0.265-1.412 0.794-1.985zM15.551 11.814v-4.235h-4.235v-2.846h4.235v-4.235h2.779v4.235h4.235v2.846h-4.235v4.235h-2.779z"
+						></path>
+					</svg>
+					<span>sell your car</span>
+				</a>
+			</div>
+		</aside>
+		<!-- End Sidebar-->
+
+		<main id="main" class="main">
+			<!-- start Page Title for big device -->
+			<div class="pagetitle d-flex justify-content-between align-items-center d-none d-sm-flex">
+				<div class="calendar-header flex-between w-100 mr-4">
+					<div class="calendar-header-left d-flex align-items-center gx-3">
+						<div class="switch-months-btns">
+							<button class="btn btn-swith-months">
+								<!-- <svg class="icon">
+									<use xlink:href="assets/img/icons.svg#icon-chevron-left"></use>
+								</svg> -->
+								<svg
+									version="1.1"
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									class="icon"
+								>
+									<path
+										d="M15.707 17.293l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-6 6c-0.391 0.391-0.391 1.024 0 1.414l6 6c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"
+									></path>
+								</svg>
+							</button>
+							<button class="btn btn-swith-months">
+								<!-- <svg class="icon">
+									<use xlink:href="assets/img/icons.svg#icon-cheveron-right"></use>
+								</svg> -->
+								<svg
+									version="1.1"
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									class="icon"
+								>
+									<path
+										d="M12.95 10.707l0.707-0.707-5.657-5.657-1.414 1.414 4.242 4.243-4.242 4.243 1.414 1.414 4.95-4.95z"
+									></path>
+								</svg>
+							</button>
+						</div>
+						<div class="month-name">September <span class="year">2020</span></div>
+					</div>
+
+					<div class="calendar-header-right d-flex align-items-center">
+						<button class="btn btn-switch-calendar d-flex me-3 btn-active">
+							<!-- <svg class="icon">
+								<use xlink:href="assets/img/icons.svg#icon-calendar"></use>
+							</svg> -->
+							<svg
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								width="29"
+								height="32"
+								viewBox="0 0 29 32"
+								class="icon"
+							>
+								<path
+									fill="#9a9ea7"
+									d="M17.356 20.556v2.887h-10.313v-2.887h10.313zM24.644 27.844v-16.087h-20.487v16.087h20.487zM24.644 4.4c0.779 0 1.467 0.298 2.063 0.894s0.894 1.283 0.894 2.063v20.487c0 0.779-0.298 1.467-0.894 2.063s-1.283 0.894-2.063 0.894h-20.487c-0.825 0-1.535-0.275-2.131-0.825-0.55-0.596-0.825-1.306-0.825-2.131v-20.487c0-0.779 0.275-1.467 0.825-2.063 0.596-0.596 1.306-0.894 2.131-0.894h1.444v-2.956h2.956v2.956h11.687v-2.956h2.956v2.956h1.444zM21.756 14.644v2.956h-14.713v-2.956h14.713z"
+								></path>
+							</svg>
+							<!-- <span>calendar</span> -->
+						</button>
+						<button class="btn btn-list">
+							<!-- <svg class="icon">
+								<use xlink:href="assets/img/icons.svg#icon-list"></use>
+							</svg> -->
+							<svg
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								width="29"
+								height="32"
+								viewBox="0 0 29 32"
+								class="icon"
+							>
+								<path
+									d="M10.433 3.106h25.875v3.635h-25.875v-3.635zM10.433 17.817v-3.635h25.875v3.635h-25.875zM10.433 28.894v-3.635h25.875v3.635h-25.875zM2.904 25.173c0.577-0.577 1.24-0.865 1.99-0.865s1.385 0.288 1.904 0.865c0.577 0.519 0.865 1.154 0.865 1.904s-0.288 1.413-0.865 1.99c-0.519 0.519-1.154 0.779-1.904 0.779s-1.413-0.26-1.99-0.779c-0.519-0.577-0.779-1.24-0.779-1.99s0.26-1.385 0.779-1.904zM2.904 2.933c0.577-0.519 1.24-0.779 1.99-0.779s1.385 0.26 1.904 0.779c0.577 0.519 0.865 1.183 0.865 1.99s-0.288 1.471-0.865 1.99c-0.519 0.519-1.154 0.779-1.904 0.779s-1.413-0.26-1.99-0.779c-0.519-0.519-0.779-1.183-0.779-1.99s0.26-1.471 0.779-1.99zM2.904 14.010c0.577-0.519 1.24-0.779 1.99-0.779s1.385 0.26 1.904 0.779c0.577 0.519 0.865 1.183 0.865 1.99s-0.288 1.471-0.865 1.99c-0.519 0.519-1.154 0.779-1.904 0.779s-1.413-0.26-1.99-0.779c-0.519-0.519-0.779-1.183-0.779-1.99s0.26-1.471 0.779-1.99z"
+								></path>
+							</svg>
+							<!-- <span class="List">List</span> -->
+						</button>
+					</div>
+				</div>
+
+				<div class="d-flex align-items-center">
+					<form action="#" class="form d-flex align-items-center">
+						<!-- <svg class="icon mr-1"><use xlink:href="assets/img/icons.svg#icon-S-Search"></use></svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							class="icon mr-1"
+						>
+							<path
+								d="M7.154 18.154c1.51 1.51 3.343 2.265 5.5 2.265s3.99-0.755 5.5-2.265c1.51-1.51 2.265-3.343 2.265-5.5s-0.755-3.99-2.265-5.5c-1.51-1.51-3.343-2.265-5.5-2.265s-3.99 0.755-5.5 2.265c-1.51 1.51-2.265 3.343-2.265 5.5s0.755 3.99 2.265 5.5zM23.007 20.419l8.573 8.573-2.588 2.588-8.573-8.573v-1.375l-0.485-0.485c-2.049 1.779-4.475 2.669-7.279 2.669-3.127 0-5.797-1.078-8.007-3.235-2.157-2.157-3.235-4.799-3.235-7.926s1.078-5.77 3.235-7.926c2.211-2.211 4.88-3.316 8.007-3.316s5.77 1.105 7.926 3.316c2.157 2.157 3.235 4.799 3.235 7.926 0 1.132-0.27 2.426-0.809 3.882-0.539 1.402-1.159 2.534-1.86 3.397l0.485 0.485h1.375z"
+							></path>
+						</svg>
+						<input type="text" placeholder="Type to search" class="input w-100" />
+					</form>
+					<div class="notification">
+						<div class="notification">
+							<!-- <svg class="icon">
+							<use xlink:href="assets/img/icons.svg#icon-Bell-Icon"></use>
+						</svg> -->
+							<svg
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								width="17"
+								height="20"
+								viewBox="0 0 17 20"
+								class="icon"
+							>
+								<path
+									d="M12.266 14.313v-5.79c0-1.236-0.347-2.262-1.040-3.076-0.694-0.844-1.628-1.266-2.804-1.266s-2.111 0.422-2.804 1.266c-0.694 0.814-1.040 1.839-1.040 3.076v5.79h7.689zM14.211 13.318l1.945 1.945v0.95h-15.469v-0.95l1.945-1.945v-4.794c0-1.508 0.377-2.819 1.131-3.935 0.784-1.116 1.854-1.839 3.211-2.171v-0.678c0-0.392 0.136-0.724 0.407-0.995 0.271-0.302 0.618-0.452 1.040-0.452s0.769 0.151 1.040 0.452c0.271 0.271 0.407 0.603 0.407 0.995v0.678c1.357 0.332 2.412 1.055 3.166 2.171 0.784 1.116 1.176 2.427 1.176 3.935v4.794zM9.778 18.565c-0.392 0.362-0.844 0.543-1.357 0.543s-0.965-0.181-1.357-0.543c-0.392-0.392-0.588-0.844-0.588-1.357h3.89c0 0.513-0.196 0.965-0.588 1.357z"
+								></path>
+							</svg>
+							<span class="active"></span>
+						</div>
+					</div>
+					<div class="Profile">
+						<img src="assets/img/profile-img.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+
+			<!-- start Page Title for small device -->
+			<div class="pagetitle d-flex justify-content-between align-items-center d-sm-none">
+				<div>
+					<h1>appoinments</h1>
+				</div>
+				<div class="calendar-header-right d-flex align-items-center">
+					<button class="btn btn-switch-calendar bg-gray-100 radius-10 flex-center">
+						<!-- <svg class="icon">
+							<use xlink:href="assets/img/icons.svg#icon-calendar"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="29"
+							height="32"
+							viewBox="0 0 29 32"
+							class="icon"
+						>
+							<path
+								d="M17.356 20.556v2.887h-10.313v-2.887h10.313zM24.644 27.844v-16.087h-20.487v16.087h20.487zM24.644 4.4c0.779 0 1.467 0.298 2.063 0.894s0.894 1.283 0.894 2.063v20.487c0 0.779-0.298 1.467-0.894 2.063s-1.283 0.894-2.063 0.894h-20.487c-0.825 0-1.535-0.275-2.131-0.825-0.55-0.596-0.825-1.306-0.825-2.131v-20.487c0-0.779 0.275-1.467 0.825-2.063 0.596-0.596 1.306-0.894 2.131-0.894h1.444v-2.956h2.956v2.956h11.687v-2.956h2.956v2.956h1.444zM21.756 14.644v2.956h-14.713v-2.956h14.713z"
+							></path>
+						</svg>
+						<!-- <span>calendar</span> -->
+					</button>
+					<button class="btn btn-list radius-10 flex-center PinkColor">
+						<img src="assets/img/nav.png" alt="" />
+					</button>
+				</div>
+			</div>
+			<!-- End Page Title -->
+
+			<!-- auction calendar for big device -->
+			<section class="auction-calendar calendar d-none d-sm-block">
+				<!-- calendar table -->
+				<div class="table-list">
+					<div class="table-item table-head">
+						<div class="day-name mon">mon</div>
+						<div class="day-name mon">tue</div>
+						<div class="day-name mon">wed</div>
+						<div class="day-name mon">thu</div>
+						<div class="day-name mon">fri</div>
+						<div class="day-name mon">sa</div>
+						<div class="day-name mon">sun</div>
+					</div>
+					<div class="table-item">
+						<div class="date">26</div>
+						<div class="date">27</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>28</span>
+							<button class="btn btn-city">los angless</button>
+							<button class="btn btn-city">So Sacramento</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date">29</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>30</span>
+							<button class="btn btn-city">San Jose</button>
+							<button class="btn btn-city">Eugene</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>1</span>
+							<button class="btn btn-city">Eastern Region</button>
+						</div>
+						<div class="date">2</div>
+					</div>
+					<div class="table-item">
+						<div class="date">3</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>4</span>
+							<button class="btn btn-city">Martinez</button>
+							<button class="btn btn-city">Sun Valley</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date">5</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>6</span>
+							<button class="btn btn-city">Martinez</button>
+							<button class="btn btn-city">Sun Valley</button>
+						</div>
+						<div class="date">7</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>8</span>
+							<button class="btn btn-city">Fresno</button>
+						</div>
+						<div class="date">9</div>
+					</div>
+					<div class="table-item">
+						<div class="date">10</div>
+						<div class="date">11</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>12</span>
+							<button class="btn btn-city">Hayward</button>
+							<button class="btn btn-city bg-yellow">San Bernardino</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>13</span>
+							<button class="btn btn-city">Las Vegas</button>
+							<button class="btn btn-city">Reno</button>
+						</div>
+						<div class="date">14</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>15</span>
+							<button class="btn btn-city">Van Nuys</button>
+							<button class="btn btn-city">Pasco</button>
+						</div>
+						<div class="date">16</div>
+					</div>
+					<div class="table-item">
+						<div class="date d-flex flex-column align-items-end">
+							<span>17</span>
+							<button class="btn btn-city">Anchorage</button>
+							<button class="btn btn-city">Tallahassee</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date">18</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>19</span>
+							<button class="btn btn-city">Tampa South</button>
+							<button class="btn btn-city">North Boston</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date">20</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>21</span>
+							<button class="btn btn-city">West Warren</button>
+							<button class="btn btn-city">Kincheloe</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date">22</div>
+						<div class="date">23</div>
+					</div>
+					<div class="table-item">
+						<div class="date">24</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>25</span>
+							<button class="btn btn-city">Cleveland East</button>
+							<button class="btn btn-city">Philadelphia East</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date">26</div>
+						<div class="date">27</div>
+						<div class="date">28</div>
+						<div class="date d-flex flex-column align-items-end">
+							<span>29</span>
+							<button class="btn btn-city">Charleston</button>
+							<button class="btn btn-city">North Boston</button>
+							<button class="btn btn-dots">...</button>
+						</div>
+						<div class="date">30</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- auction calendar for small device -->
+			<section class="auction-calendar calendar d-sm-none">
+				<!-- calendar header -->
+				<div class="calendar-header">
+					<div class="calendar-header-left w-100 p-4">
+						<div class="month-name">appoinments <span class="year">2020</span></div>
+					</div>
+				</div>
+				<!-- calendar body -->
+
+				<div class="calendar-list">
+					<div class="calendar-item">
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="calendar-title">Hartford</div>
+								<div class="calendar-state px-3">CT</div>
+							</div>
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										class="icon"
+									>
+										<path
+											d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Region</div>
+								<div class="calendar-region px-3">New England</div>
+							</div>
+							<div class="calendar-time">10:00 Pm GST</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Vehicles</div>
+								<div class="calendar-vehicles px-3">132 Vehicles</div>
+							</div>
+							<div class="calendar-date">01/18/2021</div>
+						</div>
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Status</div>
+								<div class="calendar-vehicles px-3">past</div>
+							</div>
+						</div>
+					</div>
+					<div class="calendar-item">
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="calendar-title">Washington</div>
+								<div class="calendar-state px-3">DC</div>
+							</div>
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										class="icon"
+									>
+										<path
+											d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Region</div>
+								<div class="calendar-region px-3">Mid Atlantic</div>
+							</div>
+							<div class="calendar-time">10:00 Pm GST</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Vehicles</div>
+								<div class="calendar-vehicles px-3">456 Vehicles</div>
+							</div>
+							<div class="calendar-date">01/21/2021</div>
+						</div>
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Status</div>
+								<div class="calendar-vehicles px-3">past</div>
+							</div>
+						</div>
+					</div>
+					<div class="calendar-item">
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="calendar-title">Seaford</div>
+								<div class="calendar-state px-3">DE</div>
+							</div>
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										class="icon"
+									>
+										<path
+											d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Region</div>
+								<div class="calendar-region px-3">New England</div>
+							</div>
+							<div class="calendar-time">10:00 Pm GST</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Vehicles</div>
+								<div class="calendar-vehicles px-3">45 Vehicles</div>
+							</div>
+							<div class="calendar-date">01/22/2021</div>
+						</div>
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Status</div>
+								<div class="calendar-vehicles px-3">live</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="calendar-item">
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="calendar-title">Miami North</div>
+								<div class="calendar-state px-3">FL</div>
+							</div>
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										class="icon"
+									>
+										<path
+											d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Region</div>
+								<div class="calendar-region px-3">Florida South</div>
+							</div>
+							<div class="calendar-time">10:00 Pm GST</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Vehicles</div>
+								<div class="calendar-vehicles px-3">189 Vehicles</div>
+							</div>
+							<div class="calendar-date">01/18/2021</div>
+						</div>
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Status</div>
+								<div class="calendar-vehicles px-3">upcoming</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="calendar-item">
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="calendar-title">Ocala</div>
+								<div class="calendar-state px-3">FL</div>
+							</div>
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										class="icon"
+									>
+										<path
+											d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Region</div>
+								<div class="calendar-region px-3">Florida South</div>
+							</div>
+							<div class="calendar-time">10:00 Pm GST</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Vehicles</div>
+								<div class="calendar-vehicles px-3">189 Vehicles</div>
+							</div>
+							<div class="calendar-date">01/22/2021</div>
+						</div>
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Status</div>
+								<div class="calendar-vehicles px-3">upcoming</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="calendar-item">
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="calendar-title">Atlanta South</div>
+								<div class="calendar-state px-3">GA</div>
+							</div>
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										class="icon"
+									>
+										<path
+											d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Region</div>
+								<div class="calendar-region px-3">Georgia East</div>
+							</div>
+							<div class="calendar-time">10:00 Pm GST</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Vehicles</div>
+								<div class="calendar-vehicles px-3">174 Vehicles</div>
+							</div>
+							<div class="calendar-date">01/23/2021</div>
+						</div>
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Status</div>
+								<div class="calendar-vehicles px-3">upcoming</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="calendar-item">
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="calendar-title">Atlanta West</div>
+								<div class="calendar-state px-3">GA</div>
+							</div>
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										class="icon"
+									>
+										<path
+											d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Region</div>
+								<div class="calendar-region px-3">Georgia East</div>
+							</div>
+							<div class="calendar-time">10:00 Pm GST</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Vehicles</div>
+								<div class="calendar-vehicles px-3">234 Vehicles</div>
+							</div>
+							<div class="calendar-date">01/24/2021</div>
+						</div>
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Status</div>
+								<div class="calendar-vehicles px-3">upcoming</div>
+							</div>
+						</div>
+					</div>
+					<div class="calendar-item">
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="calendar-title">Indianapolis</div>
+								<div class="calendar-state px-3">IN</div>
+							</div>
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg
+										version="1.1"
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										class="icon"
+									>
+										<path
+											d="M10.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2zM3.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.986 2.199-2.2s-0.984-2.2-2.199-2.2zM17.001 7.8c-1.215 0-2.201 0.985-2.201 2.2s0.986 2.2 2.201 2.2c1.215 0 2.199-0.985 2.199-2.2s-0.984-2.2-2.199-2.2z"
+										></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Region</div>
+								<div class="calendar-region px-3">Indianapolis</div>
+							</div>
+							<div class="calendar-time">10:00 Pm GST</div>
+						</div>
+
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Vehicles</div>
+								<div class="calendar-vehicles px-3">116 Vehicles</div>
+							</div>
+							<div class="calendar-date">01/24/2021</div>
+						</div>
+						<div class="flex-between py-2">
+							<div class="d-flex">
+								<div class="text">Status</div>
+								<div class="calendar-vehicles px-3">upcoming</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- pagination -->
+				<div class="pagination d-flex align-items-center justify-content-start">
+					<button class="btn btn-prev-pagination d-none">
+						<svg class="icon icon-arrow-left">
+							<use xlink:href="assets/img/icons.svg#icon-arrow-left"></use>
+						</svg>
+					</button>
+					<div class="pagination-btns d-flex align-items-center">
+						<button class="btn btn-pagination active">1</button>
+						<button class="btn btn-pagination">2</button>
+						<button class="btn btn-pagination">3</button>
+						<button class="btn btn-pagination">4</button>
+						<button class="btn btn-pagination">5</button>
+					</div>
+					<button class="btn btn-next-pagination">
+						<img src="assets/img/left.png" alt="" />
+					</button>
+				</div>
+			</section>
+			<!-- auction calendar -->
+
+			<!-- Remove the container if you want to extend the Footer to full width. -->
+			<div class="mt-5 d-none">
+				<!-- Footer -->
+				<footer class="text-center text-lg-start text-white FooterArea">
+					<!-- Section: Links  -->
+					<section class="">
+						<div class="container text-center text-md-start mt-5">
+							<!-- Grid row -->
+							<div class="row mt-3">
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">About</h6>
+									<p>
+										<a href="#"> How it works</a>
+									</p>
+									<p>
+										<a href="#">Careers</a>
+									</p>
+									<p>
+										<a href="#">About us</a>
+									</p>
+
+									<p>
+										<a href="#">Media</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Community</h6>
+									<p>
+										<a href="#">Against Discrimination</a>
+									</p>
+									<p>
+										<a href="#">Invite friends</a>
+									</p>
+									<p>
+										<a href="#">Gift cards</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Become seller</h6>
+									<p>
+										<a href="#">Add your vehicle</a>
+									</p>
+									<p>
+										<a href="#">Business account</a>
+									</p>
+									<p>
+										<a href="#">Community</a>
+									</p>
+
+									<p>
+										<a href="#">Media</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Bookings support</h6>
+									<p>
+										<a href="#">Updates for COVID-19</a>
+									</p>
+									<p>
+										<a href="#">Help Center</a>
+									</p>
+									<p>
+										<a href="#">Support</a>
+									</p>
+
+									<p>
+										<a href="#">Trust & Safety</a>
+									</p>
+								</div>
+
+								<!-- Grid column -->
+							</div>
+							<!-- Grid row -->
+						</div>
+					</section>
+					<!-- Section: Links  -->
+				</footer>
+				<!-- Copyright -->
+				<div class="FooterTextArea">
+					<div class="TermText">
+						<p>
+							<a href="#" class="Privacy">Privacy Policy </a>
+							<a href="#" class="Term">Term of Use</a>
+							<span class="reserved"> © 2021 All rights reserved</span>
+						</p>
+					</div>
+
+					<div class="ms-auto">
+						<img src="assets/img/Language.png" alt="" />
+						<img src="assets/img/Currency.png" alt="" class="ms-2" />
+					</div>
+				</div>
+				<!-- Copyright -->
+				<!-- Footer -->
+			</div>
+		</main>
+		<!-- End #main -->
+		<!-- overlay -->
+		<div class="overlay"></div>
+		<!-- mbl nav bar start -->
+		<nav class="mblNav">
+			<ul class="mblNav-list">
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M4.801 15.199c1.461 1.432 3.194 2.148 5.199 2.148s3.724-0.716 5.156-2.148c1.461-1.461 2.192-3.194 2.192-5.199s-0.731-3.724-2.192-5.156c-1.432-1.461-3.151-2.191-5.156-2.191s-3.738 0.73-5.199 2.191c-1.432 1.432-2.148 3.151-2.148 5.156s0.716 3.738 2.148 5.199zM3.512 3.555c1.805-1.805 3.967-2.707 6.488-2.707s4.669 0.902 6.445 2.707c1.805 1.776 2.707 3.924 2.707 6.445s-0.902 4.684-2.707 6.488c-1.776 1.776-3.924 2.664-6.445 2.664s-4.684-0.888-6.488-2.664c-1.776-1.805-2.664-3.967-2.664-6.488s0.888-4.669 2.664-6.445zM12.063 4.973c0.745 0.315 1.346 0.702 1.805 1.16s0.845 1.060 1.16 1.805c0.315 0.745 0.473 1.432 0.473 2.063s-0.158 1.318-0.473 2.063c-0.286 0.745-0.659 1.346-1.117 1.805-1.060 1.088-2.349 1.633-3.867 1.633s-2.822-0.544-3.91-1.633l3.867-3.867v-5.5c0.63 0 1.318 0.158 2.063 0.473z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link active">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-1"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M3.203 7.891l4.688 4.727-2.344 2.344-4.727-4.687 2.383-2.383zM10.273 0.82l4.687 4.727-2.344 2.344-4.727-4.688 2.383-2.383zM4.375 6.719l2.344-2.344 11.797 11.797-2.344 2.344-11.797-11.797zM0.82 17.5h10v1.68h-10v-1.68z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-2"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M10.848 12.848v1.805h-6.445v-1.805h6.445zM15.402 17.402v-10.055h-12.805v10.055h12.805zM15.402 2.75c0.487 0 0.917 0.186 1.289 0.559s0.559 0.802 0.559 1.289v12.805c0 0.487-0.186 0.917-0.559 1.289s-0.802 0.559-1.289 0.559h-12.805c-0.516 0-0.96-0.172-1.332-0.516-0.344-0.372-0.516-0.816-0.516-1.332v-12.805c0-0.487 0.172-0.917 0.516-1.289 0.372-0.372 0.816-0.559 1.332-0.559h0.902v-1.848h1.848v1.848h7.305v-1.848h1.848v1.848h0.902zM13.598 9.152v1.848h-9.195v-1.848h9.195z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-3"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M10.525 5.942v4.297l3.533 2.148-0.716 1.241-4.345-2.626v-5.061h1.528zM19.167 8.090h-6.923l2.817-2.865c-1.4-1.4-3.087-2.101-5.061-2.101-1.942-0.032-3.613 0.637-5.013 2.005-0.573 0.573-1.066 1.353-1.48 2.339-0.414 0.955-0.621 1.83-0.621 2.626s0.207 1.687 0.621 2.674c0.414 0.955 0.907 1.719 1.48 2.292s1.353 1.066 2.339 1.48c0.987 0.414 1.878 0.621 2.674 0.621s1.687-0.207 2.674-0.621c1.019-0.414 1.814-0.907 2.387-1.48 1.369-1.369 2.053-3.024 2.053-4.965h2.053c0 2.515-0.891 4.647-2.674 6.398-1.782 1.782-3.947 2.674-6.493 2.674s-4.711-0.891-6.493-2.674c-1.782-1.751-2.674-3.867-2.674-6.35 0-2.514 0.891-4.663 2.674-6.445 0.732-0.732 1.719-1.353 2.96-1.862 1.273-0.541 2.435-0.812 3.485-0.812s2.196 0.271 3.438 0.812c1.273 0.509 2.276 1.13 3.008 1.862l2.769-2.865v7.257z"
+							></path>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item sidebar-toggle-btn">
+					<a href="#" class="mblNav-link">
+						<!-- <svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-4"></use>
+						</svg> -->
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 20 20"
+							class="icon"
+						>
+							<path
+								d="M1.25 0.833h27.5v3.079h-27.5v-3.079zM1.25 11.504v-3.008h27.5v3.008h-27.5zM1.25 19.167v-3.079h27.5v3.079h-27.5z"
+							></path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- mbl nav bar end -->
+
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
